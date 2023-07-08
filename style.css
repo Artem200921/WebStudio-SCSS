@@ -19,6 +19,8 @@ ul {
 .nav-ul-li-a{
   font-weight: 500;
   line-height: 1.14;
+  width: 45px;
+  height: 16px;
 }
 
 .nav-ul-li-a:hover{
@@ -31,6 +33,8 @@ ul {
   line-height: 1.19;
   font-size: 26px;
   color: black;
+  margin-left: 215px;
+  margin-top: 24px;
 }
 
 .header_a:visited{
@@ -52,6 +56,7 @@ ul {
 
 
 /* section1-portfolio */
+
 .main-section1-li-portfolio{
   display: inline-block;
   text-align: center;
@@ -78,6 +83,14 @@ ul {
   font-weight: 700;
 }
 
+.main-section1-ul_ul{
+  margin-left: 200px;
+}
+
+.main-section1-ul{
+  margin-left: 650px;
+}
+
 .main-section1-button-portfolio{
   font-weight: 500;
   color: black;
@@ -87,7 +100,9 @@ ul {
   line-height: 1.62;
   font-size: 16px;
 }
+
 /* section1 */
+
 .main-section1-button{
   font-weight: 700;
   color: white;
@@ -103,6 +118,7 @@ ul {
   height: 600px;
   background-color: black;
   text-align: center;
+  padding: 200px;
 }
 
 .main-section1-h1{
@@ -110,7 +126,12 @@ ul {
   color: white;
   font-weight: 900;
   line-height: 1.34;
+  width: 696px;
+  height: 120px;
+  margin-top: 280px;
+  margin-left: 452px;
 }
+
 /* section1-2-3 */
 
 .section1_section2-ul{
@@ -138,6 +159,7 @@ ul {
   margin: 12px;
   display: inline-block;
 }
+
 /* section3_section4 */
 
 .section3_section4-ul-li-h3{
@@ -193,6 +215,7 @@ footer{
 .footer-ul-li-a[href*=https]{
   color: #FFFFFF;
 }
+
 .footer-ul-li-a{
   color: gray;
 }
