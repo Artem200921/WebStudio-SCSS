@@ -32,8 +32,8 @@ h5,
 p,
 ul,
 figure {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 ul,
@@ -43,7 +43,7 @@ menu {
 }
 
 .container{
-  width: 1170px;
+  width: 1200px;
   padding: 0px 15px;
   margin: 0px auto;
 }
@@ -53,7 +53,6 @@ menu {
 /* <налаштування header> */
 
 .header{
-  width: 1170px;
   height: 80px;
   padding-top: 24px;
 }
@@ -263,10 +262,10 @@ menu {
   padding: 0px 15px;
   text-align: center;
   padding: 200px 452px 280px 452px;
+  margin: auto;
 }
 
 .main-section№1-h1{
-  width: 696px;
   height: 120px;
   color: #FFF;
   text-align: center;
@@ -300,16 +299,16 @@ menu {
   margin-bottom: 94px;
 }
 
-.main-section№2-ul-li:first-child{
+/* .main-section№2-ul-li:first-child{
   margin-left: 215px;
-}
+} */
 
 .main-section№2-ul-li:not(:nth-last-child(-n+2)){
   margin-top: 94px;
 }
 
 .main-section№2-ul-li:not(:last-child){
-  margin-right: 30px;
+  margin-right: 16px;
 }
 
 .section№2-ul-li-h3{
@@ -345,9 +344,9 @@ menu {
 
 /* <налаштування третьої section> */
 
-.main-section№3{
+/* .main-section№3{
   text-align: center;
-}
+} */
 
 .main-section№3-h2{
   color: #212121;
@@ -361,7 +360,6 @@ menu {
 }
 
 .section№3-ul{
-  
   margin-bottom: 94px;
 }
 
@@ -370,7 +368,7 @@ menu {
 }
 
 .section№3-ul-li:not(:last-child){
-  margin-right: 30px;
+  margin-right: 16px;
 }
 
 /* </налаштування третьої section> */
@@ -378,13 +376,9 @@ menu {
 /* <налаштування третьої section> */
 
 .main-section№4{
-  width: 1600px;
+  width: auto;
   height: 648px;
   background: #F5F4FA;
-}
-
-.section№4-ul{
-  padding-left: 115px;
 }
 
 .main-section№4-h2{
@@ -399,7 +393,7 @@ menu {
 }
 
 .section№4-ul-li:not(:last-child){
-  margin-right: 30px;
+  margin-right: 26px;
 }
 
 .section№4-ul-li-h3{
@@ -440,7 +434,6 @@ menu {
 /* <налаштування footer> */
 
 .footer{
-  width: 1600px;
   height: 252px;
   background: #2F303A;
   padding-top: 60px;
