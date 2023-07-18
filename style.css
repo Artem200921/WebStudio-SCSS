@@ -54,7 +54,15 @@ menu {
 
 .header{
   height: 80px;
-  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header>ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-a {
@@ -65,8 +73,6 @@ menu {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
-  display: inline;
-  width: 145px;
 }
 
 .header-a-span {
@@ -79,34 +85,12 @@ menu {
   letter-spacing: 0.78px;
 }
 
-.nav {
-  width: auto;
-  margin: 0 auto;
-  display: inline-block;
-}
-
-.nav_ul-li {
-  display: inline;
-}
-
 .nav-ul-li {
   display: inline;
   margin-left: 93px;
 }
 .nav-ul-li:not(:first-child) {
   margin-left: 50px;
-}
-
-.nav-ul-li-a1 {
-  width: 45px;
-}
-
-.nav-ul-li-a2 {
-  width: 72px;
-}
-
-.nav-ul-li-a3 {
-  width: 64px;
 }
 
 .nav-ul-li-a {
@@ -132,9 +116,7 @@ menu {
 }
 
 .nav_ul {
-  width: auto;
-  display: inline;
-  margin-left: 294px;
+  margin-left: 344px;
 }
 
 .nav_ul-li:not(:first-child) {
@@ -294,21 +276,24 @@ menu {
 
 /* <налаштування другої section> */
 
+.main-section№2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .main-section№2-ul-li{
   display: inline-block;
   margin-bottom: 94px;
 }
-
-/* .main-section№2-ul-li:first-child{
-  margin-left: 215px;
-} */
 
 .main-section№2-ul-li:not(:nth-last-child(-n+2)){
   margin-top: 94px;
 }
 
 .main-section№2-ul-li:not(:last-child){
-  margin-right: 16px;
+  margin-right: 30px;
 }
 
 .section№2-ul-li-h3{
@@ -344,9 +329,11 @@ menu {
 
 /* <налаштування третьої section> */
 
-/* .main-section№3{
-  text-align: center;
-} */
+.main-section№3>ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .main-section№3-h2{
   color: #212121;
@@ -363,10 +350,6 @@ menu {
   margin-bottom: 94px;
 }
 
-.section№3-ul-li{
-  display: inline;
-}
-
 .section№3-ul-li:not(:last-child){
   margin-right: 16px;
 }
@@ -379,6 +362,12 @@ menu {
   width: auto;
   height: 648px;
   background: #F5F4FA;
+}
+
+.main-section№4>ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-section№4-h2{
@@ -421,9 +410,6 @@ menu {
 } */
 
 .section№4-ul-li{
-  display: inline-block;
-  text-align: center;
-
   margin-bottom: 94px;
 }
 
@@ -438,10 +424,10 @@ menu {
   background: #2F303A;
   padding-top: 60px;
   padding-left: 215px;
+  display: flex;
 }
-
-.div{
-  margin: 0px;
+.footer>ul{
+  display: flex;
 }
 
 .footer-a{
