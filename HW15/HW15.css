@@ -3,6 +3,8 @@
   text-align: center;
   flex-wrap: wrap;
   width: 150px;
+  border-radius: 4px 4px 0px 0px;
+  outline: 2px solid;
 }
 
 .item:nth-child(1) {
