@@ -2,36 +2,36 @@
   display: flex;
   text-align: center;
   flex-wrap: wrap;
-  width: 150px;
   border-radius: 4px 4px 0px 0px;
   outline: 2px solid;
 }
 
+.item{
+  flex: 1 1 auto;
+}
+
 .item:nth-child(1) {
-  width: 75px;
+  width: 50%;
   background-color: red;
 }
 
 .item:nth-child(5) {
+  width: 50%;
   order: 2;
-  width: 75px;
   background-color: orange;
 }
 
 .item:nth-child(3) {
   order: 3;
-  width: 50px;
   background-color: purple;
 }
 
 .item:nth-child(2) {
   order: 4;
-  width: 50px;
   background-color: blue;
 }
 
 .item:nth-child(4) {
   order: 5;
-  width: 50px;
   background-color: green;
 }
