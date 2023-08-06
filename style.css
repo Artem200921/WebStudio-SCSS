@@ -290,8 +290,52 @@ menu {
   align-items: center;
 }
 
+.main-features-ul-li:nth-child(1):before{
+  display: block;
+  content: url(img/antenna\ 1.png);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  padding: 25px 100px;
+}
+
+.main-features-ul-li:nth-child(2):before{
+  display: block;
+  content: url(img/clock\ 1.png);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  padding: 25px 100px;
+}
+
+.main-features-ul-li:nth-child(3):before{
+  display: block;
+  content: url(img/diagram\ 1.png);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  padding: 25px 100px;
+}
+
+.main-features-ul-li:nth-child(4):before{
+  display: block;
+  content: url(img/astronaut\ 1.png);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  padding: 25px 100px;
+}
+
 .main-features-ul-li:not(:last-child){
   margin-right: 30px;
+}
+
+.main-features-ul-li2{
+  align-self: start;
 }
 
 .features-ul-li-h3{
