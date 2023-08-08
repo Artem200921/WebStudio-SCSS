@@ -42,7 +42,7 @@ menu {
   list-style: none;
 }
 
-.container{
+.container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -52,18 +52,18 @@ menu {
 
 /* <налаштування header> */
 
-.header-portfolio{
+.header-portfolio {
   margin-bottom: 94px;
 }
 
-.header{
+.header {
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header>ul{
+.header > ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +89,7 @@ menu {
   letter-spacing: 0.78px;
 }
 
-.nav-list{
+.nav-list {
   display: flex;
 }
 
@@ -114,7 +114,7 @@ menu {
   color: #2196f3;
 }
 
-.header-items{
+.header-items {
   margin-left: 344px;
 }
 
@@ -139,49 +139,49 @@ menu {
 
 /* <налаштування main portfolio> */
 
-.main-section2{
+.main-section2 {
   margin-bottom: 94px;
 }
 
-.main-section-list{
+.main-section-list {
   display: flex;
   margin-bottom: 34px;
   justify-content: center;
   column-gap: 8px;
 }
 
-.local-button-settings-b1{
+.local-button-settings-b1 {
   width: 73px;
   height: 38px;
 }
 
-.local-button-settings-b2{
+.local-button-settings-b2 {
   width: 125px;
   height: 38px;
   flex-shrink: 0;
 }
 
-.local-button-settings-b3{
+.local-button-settings-b3 {
   width: 112px;
   height: 38px;
   flex-shrink: 0;
 }
 
-.local-button-settings-b4{
+.local-button-settings-b4 {
   width: 103px;
   height: 38px;
   flex-shrink: 0;
 }
 
-.local-button-settings-b5{
+.local-button-settings-b5 {
   width: 130px;
   height: 38px;
   flex-shrink: 0;
 }
 
-.global-button-settings{
+.global-button-settings {
   border-radius: 4px;
-  background: #F5F4FA;
+  background: #f5f4fa;
   color: #212121;
   text-align: center;
   font-size: 16px;
@@ -192,24 +192,24 @@ menu {
   flex-basis: calc((100% - 6 * 8px) / 5);
 }
 
-.global-button-settings:hover{
-  background: #2196F3;
-  color: #FFF;
+.global-button-settings:hover {
+  background: #2196f3;
+  color: #fff;
 }
 
-.second-list{
+.second-list {
   flex-wrap: wrap;
   display: flex;
   gap: 30px;
 }
 
-.second-list-item{
+.second-list-item {
   background-color: #fff;
   text-align: center;
-  flex-basis: calc((100% - 3 * 30px)/ 3);
+  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
-.second-list-item-h3{
+.second-list-item-h3 {
   color: #212121;
   font-size: 18px;
   font-style: normal;
@@ -219,7 +219,7 @@ menu {
   /* width: 322px; */
 }
 
-.second-list-item-p{
+.second-list-item-p {
   color: #757575;
   font-size: 16px;
   font-style: normal;
@@ -234,8 +234,8 @@ menu {
 /* <налаштування main> */
 
 /* <налаштування першої section> */
-.main-section{
-  background: #2F303A;
+.main-section {
+  background: #2f303a;
   width: 1600px;
   height: 600px;
   padding: 0px 15px;
@@ -247,9 +247,9 @@ menu {
   flex-direction: column;
 }
 
-.main-section-h1{
+.main-section-h1 {
   height: 120px;
-  color: #FFF;
+  color: #fff;
   width: 697px;
   text-align: center;
   font-size: 44px;
@@ -260,13 +260,13 @@ menu {
   margin-bottom: 15px;
 }
 
-.main-section-button{
+.main-section-button {
   width: 216px;
   height: 50px;
   border-radius: 4px;
-  background: #2196F3;
+  background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -278,67 +278,67 @@ menu {
 
 /* <налаштування другої section> */
 
-.main-features{
+.main-features {
   display: flex;
   margin-bottom: 94px;
   margin-top: 94px;
 }
 
-.main-features-ul{
+.main-features-ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main-features-ul-li:nth-child(1):before{
+.features-ul-li-h3:nth-child(1):before {
   display: block;
   content: url(img/antenna\ 1.png);
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   padding: 25px 100px;
 }
 
-.main-features-ul-li:nth-child(2):before{
+.features-ul-li-h3:nth-child(2):before {
   display: block;
   content: url(img/clock\ 1.png);
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   padding: 25px 100px;
 }
 
-.main-features-ul-li:nth-child(3):before{
+.features-ul-li-h3:nth-child(3):before {
   display: block;
   content: url(img/diagram\ 1.png);
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   padding: 25px 100px;
 }
 
-.main-features-ul-li:nth-child(4):before{
+.features-ul-li-h3:nth-child(4):before {
   display: block;
   content: url(img/astronaut\ 1.png);
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   padding: 25px 100px;
 }
 
-.main-features-ul-li:not(:last-child){
+.main-features-ul-li:not(:last-child) {
   margin-right: 30px;
 }
 
-.main-features-ul-li2{
+.main-features-ul-li2 {
   align-self: start;
 }
 
-.features-ul-li-h3{
+.features-ul-li-h3 {
   width: 270px;
   color: #212121;
   font-size: 14px;
@@ -349,7 +349,7 @@ menu {
   text-transform: uppercase;
 }
 
-.features-ul-li-p{
+.features-ul-li-p {
   width: 270px;
   color: #757575;
   font-size: 14px;
@@ -363,17 +363,17 @@ menu {
 
 /* <налаштування третьої section> */
 
-.main-pictures{
+.main-pictures {
   margin-bottom: 94px;
 }
 
-.main-pictures>ul{
+.main-pictures > ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main-pictures-h2{
+.main-pictures-h2 {
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -384,7 +384,7 @@ menu {
   margin-bottom: 50px;
 }
 
-.pictures-ul-li:not(:last-child){
+.pictures-ul-li:not(:last-child) {
   margin-right: 16px;
 }
 
@@ -392,21 +392,21 @@ menu {
 
 /* <налаштування третьої section> */
 
-.main-our-team{
+.main-our-team {
   padding-bottom: 94px;
   padding-top: 94px;
   width: auto;
   height: 648px;
-  background: #F5F4FA;
+  background: #f5f4fa;
 }
 
-.main-our-team>ul{
+.main-our-team > ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main-our-team-h2{
+.main-our-team-h2 {
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -417,11 +417,11 @@ menu {
   margin-bottom: 50px;
 }
 
-.our-team-ul-li:not(:last-child){
+.our-team-ul-li:not(:last-child) {
   margin-right: 26px;
 }
 
-.our-team-ul-li-h3{
+.our-team-ul-li-h3 {
   color: #212121;
   text-align: center;
   font-size: 16px;
@@ -431,7 +431,7 @@ menu {
   letter-spacing: 0.48px;
 }
 
-.our-team-ul-li-p{
+.our-team-ul-li-p {
   color: #757575;
   text-align: center;
   font-size: 16px;
@@ -441,7 +441,7 @@ menu {
   letter-spacing: 0.48px;
 }
 
-.our-team-ul-li{
+.our-team-ul-li {
   background-color: #fff;
   margin-bottom: 94px;
 }
@@ -452,18 +452,18 @@ menu {
 
 /* <налаштування footer> */
 
-.footer{
+.footer {
   height: 252px;
-  background: #2F303A;
+  background: #2f303a;
   padding-top: 60px;
   display: flex;
 }
-.footer>ul{
+.footer > ul {
   display: flex;
 }
 
-.footer-logo{
-  color: #2196F3;
+.footer-logo {
+  color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -472,8 +472,8 @@ menu {
   letter-spacing: 0.78px;
 }
 
-.footer-logo-span{
-  color: #FFF;
+.footer-logo-span {
+  color: #fff;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -482,8 +482,8 @@ menu {
   letter-spacing: 0.78px;
 }
 
-.footer-item-a1{
-  color: #FFF;
+.footer-item-a1 {
+  color: #fff;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -491,8 +491,8 @@ menu {
   letter-spacing: 0.42px;
 }
 
-.footer-item-a2{
-  color: rgba(255, 255, 255, 0.60);
+.footer-item-a2 {
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
