@@ -203,6 +203,12 @@ menu {
   gap: 30px;
 }
 
+.second-list-item:hover {
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
 .second-list-item {
   background-color: #fff;
   text-align: center;
@@ -236,6 +242,8 @@ menu {
 /* <налаштування першої section> */
 .main-section {
   background: #2f303a;
+  background: url(img/hero.jpg), linear-gradient(#2F303A66, #2F303A66),
+    lightgray 0px -147.517px / 100% 170.667% no-repeat ;
   width: 1600px;
   height: 600px;
   padding: 0px 15px;
@@ -290,7 +298,7 @@ menu {
   align-items: center;
 }
 
-.features-ul-li-h3:nth-child(1):before {
+.main-features-ul-li:nth-child(1):before {
   display: block;
   content: url(img/antenna\ 1.png);
   width: 270px;
@@ -300,7 +308,7 @@ menu {
   padding: 25px 100px;
 }
 
-.features-ul-li-h3:nth-child(2):before {
+.main-features-ul-li:nth-child(2):before {
   display: block;
   content: url(img/clock\ 1.png);
   width: 270px;
@@ -310,7 +318,7 @@ menu {
   padding: 25px 100px;
 }
 
-.features-ul-li-h3:nth-child(3):before {
+.main-features-ul-li:nth-child(3):before {
   display: block;
   content: url(img/diagram\ 1.png);
   width: 270px;
@@ -320,7 +328,7 @@ menu {
   padding: 25px 100px;
 }
 
-.features-ul-li-h3:nth-child(4):before {
+.main-features-ul-li:nth-child(4):before {
   display: block;
   content: url(img/astronaut\ 1.png);
   width: 270px;
