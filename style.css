@@ -223,6 +223,7 @@ menu {
   line-height: 2;
   letter-spacing: 1.08px;
   /* width: 322px; */
+  margin-top: 20px;
 }
 
 .second-list-item-p {
@@ -232,6 +233,7 @@ menu {
   font-weight: 400;
   line-height: 1.87;
   letter-spacing: 0.48px;
+  margin-bottom: 20px;
   /* width: 322px; */
 }
 
@@ -242,7 +244,7 @@ menu {
 /* <налаштування першої section> */
 .main-section {
   background: #2f303a;
-  background: url(img/hero.jpg), linear-gradient(#2F303A66, #2F303A66),
+  background: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(img/hero.jpg),
     lightgray 0px -147.517px / 100% 170.667% no-repeat ;
   width: 1600px;
   height: 600px;
@@ -355,6 +357,7 @@ menu {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .features-ul-li-p {
@@ -437,6 +440,7 @@ menu {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.48px;
+  margin-top: 30px;
 }
 
 .our-team-ul-li-p {
@@ -447,6 +451,7 @@ menu {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.48px;
+  margin-bottom: 30px;
 }
 
 .our-team-ul-li {
@@ -466,9 +471,11 @@ menu {
 .footer {
   height: 252px;
   background: #2f303a;
-  padding-top: 60px;
+  /* padding-top: 60px; */
   display: flex;
+  align-items: center;
 }
+
 .footer > ul {
   display: flex;
 }
@@ -477,9 +484,7 @@ menu {
   color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.78px;
 }
 
@@ -491,6 +496,10 @@ menu {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+}
+
+.footer-list{
+  margin-top: 20px;
 }
 
 .footer-item-a1 {
