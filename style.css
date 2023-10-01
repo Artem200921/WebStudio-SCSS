@@ -118,6 +118,15 @@ menu {
   margin-left: 344px;
 }
 
+.header-item:hover svg {
+  fill: #2196f3;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+}
+
 .header-item-a {
   color: #757575;
   font-size: 14px;
@@ -133,6 +142,11 @@ menu {
 
 .header-item-a:hover {
   color: #2196f3;
+}
+
+.header-item-svg {
+  margin-right: 5px;
+  fill: rgba(117, 117, 117, 1);
 }
 
 /* </налаштування header> */
@@ -244,8 +258,8 @@ menu {
 /* <налаштування першої section> */
 .main-section {
   background: #2f303a;
-  background: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(img/hero.jpg),
-    lightgray 0px -147.517px / 100% 170.667% no-repeat ;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(img/hero.jpg), lightgray 0px -147.517px / 100% 170.667% no-repeat;
   width: 1600px;
   height: 600px;
   padding: 0px 15px;
@@ -300,9 +314,7 @@ menu {
   align-items: center;
 }
 
-.main-features-ul-li:nth-child(1):before {
-  display: block;
-  content: url(img/antenna\ 1.png);
+.main-features-ul-li:nth-child(1) svg {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -310,9 +322,7 @@ menu {
   padding: 25px 100px;
 }
 
-.main-features-ul-li:nth-child(2):before {
-  display: block;
-  content: url(img/clock\ 1.png);
+.main-features-ul-li:nth-child(2) svg {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -320,9 +330,7 @@ menu {
   padding: 25px 100px;
 }
 
-.main-features-ul-li:nth-child(3):before {
-  display: block;
-  content: url(img/diagram\ 1.png);
+.main-features-ul-li:nth-child(3) svg {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -330,9 +338,7 @@ menu {
   padding: 25px 100px;
 }
 
-.main-features-ul-li:nth-child(4):before {
-  display: block;
-  content: url(img/astronaut\ 1.png);
+.main-features-ul-li:nth-child(4) svg {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -432,6 +438,49 @@ menu {
   margin-right: 26px;
 }
 
+.social-team {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 16px;
+  column-gap: 10px;
+}
+
+.team-item-svg {
+  width: 20px;
+  height: 20px;
+  fill: rgba(175, 177, 184, 1);
+}
+
+.social-item-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.social-item-team:hover {
+  fill: rgba(255, 255, 255, 1);
+  background-image: url(img/ellipse.png);
+  background-position: center center;
+}
+
+.social-item-team:hover {
+  cursor: pointer;
+}
+
+.social-item-team:hover svg {
+  fill: rgba(255, 255, 255, 1);
+}
+/*
+.social-item-team:hover svg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: rgba(255, 255, 255, 1);
+} */
+
 .our-team-ul-li-h3 {
   color: #212121;
   text-align: center;
@@ -456,24 +505,84 @@ menu {
 
 .our-team-ul-li {
   border-radius: 0px 0px 4px 4px;
-  background: #FFF;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: #fff;
   margin-bottom: 94px;
 }
 
 /* </налаштування третьої section> */
 
+.main-regular-customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.regular-customers-h2 {
+  color: #212121;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+.regular-customers-list {
+  column-gap: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.regular-customers-list-item:hover svg {
+  fill: rgba(33, 150, 243, 1);
+}
+
+.regular-customers-list-item:hover {
+  border-radius: 4px;
+  border: 1px solid #2196f3;
+  cursor: pointer;
+}
+
+.regular-customers-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+
+.regular-customers-svg {
+  width: 106px;
+  height: 60px;
+  fill: rgba(175, 177, 184, 1);
+}
+
 /* </налаштування main> */
 
 /* <налаштування footer> */
 
 .footer {
-  height: 252px;
   background: #2f303a;
-  /* padding-top: 60px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   align-items: center;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-div4ik {
+  column-gap: 70px;
+  display: flex;
 }
 
 .footer > ul {
@@ -498,7 +607,7 @@ menu {
   letter-spacing: 0.78px;
 }
 
-.footer-list{
+.footer-list {
   margin-top: 20px;
 }
 
@@ -518,6 +627,41 @@ menu {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+}
+
+.footer-h4 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.social-footer {
+  column-gap: 10px;
+  display: flex;
+}
+
+.footer-social-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-position: center center;
+  background-image: url(img/ellipse-footer.png);
+}
+
+.footer-social-item:hover{
+  background-image: url(img/ellipse.png);
+  cursor: pointer;
+}
+
+.footer-item-svg {
+  width: 20px;
+  height: 20px;
+  fill: rgba(255, 255, 255, 1);
 }
 
 /* </налаштування footer> */
