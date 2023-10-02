@@ -164,36 +164,38 @@ menu {
   column-gap: 8px;
 }
 
-.local-button-settings-b1 {
+.button-settings:nth-child(1) {
   width: 73px;
   height: 38px;
 }
 
-.local-button-settings-b2 {
+.button-settings:nth-child(2) {
   width: 125px;
   height: 38px;
   flex-shrink: 0;
 }
 
-.local-button-settings-b3 {
+.button-settings:nth-child(3) {
   width: 112px;
   height: 38px;
   flex-shrink: 0;
 }
 
-.local-button-settings-b4 {
+.button-settings:nth-child(4) {
   width: 103px;
   height: 38px;
   flex-shrink: 0;
 }
 
-.local-button-settings-b5 {
+.button-settings:nth-child(5) {
   width: 130px;
   height: 38px;
   flex-shrink: 0;
 }
 
 .global-button-settings {
+  height: inherit;
+  width: inherit;
   border-radius: 4px;
   background: #f5f4fa;
   color: #212121;
@@ -203,7 +205,6 @@ menu {
   line-height: 1.62;
   letter-spacing: 0.48px;
   border: 0px;
-  flex-basis: calc((100% - 6 * 8px) / 5);
 }
 
 .global-button-settings:hover {
@@ -223,39 +224,39 @@ menu {
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
+.portfolio-pictures{
+  width: 370px;
+  height: 295px;
+}
+
 .second-list-item {
   background-color: #fff;
-  text-align: center;
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
 .second-list-item-h3 {
   color: #212121;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
-  /* width: 322px; */
   margin-top: 20px;
 }
 
 .second-list-item-p {
   color: #757575;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.87;
   letter-spacing: 0.48px;
   margin-bottom: 20px;
-  /* width: 322px; */
 }
 
 /* </налаштування main portfolio> */
 
 /* <налаштування main> */
 
-/* <налаштування першої section> */
+/* <налаштування hero> */
 .main-section {
   background: #2f303a;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -298,9 +299,9 @@ menu {
   line-height: 1.87;
   letter-spacing: 0.96px;
 }
-/* </налаштування першої section> */
+/* </налаштування hero> */
 
-/* <налаштування другої section> */
+/* <налаштування features> */
 
 .main-features {
   display: flex;
@@ -312,42 +313,15 @@ menu {
   display: flex;
   justify-content: center;
   align-items: center;
+ column-gap: 30px;
 }
 
-.main-features-ul-li:nth-child(1) svg {
+.main-features-ul-li svg {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   padding: 25px 100px;
-}
-
-.main-features-ul-li:nth-child(2) svg {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  padding: 25px 100px;
-}
-
-.main-features-ul-li:nth-child(3) svg {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  padding: 25px 100px;
-}
-
-.main-features-ul-li:nth-child(4) svg {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  padding: 25px 100px;
-}
-
-.main-features-ul-li:not(:last-child) {
-  margin-right: 30px;
 }
 
 .main-features-ul-li2 {
@@ -376,23 +350,27 @@ menu {
   letter-spacing: 0.42px;
 }
 
-/* </налаштування другої section> */
+/* </налаштування features> */
 
-/* <налаштування третьої section> */
+/* <налаштування main-pictures> */
 
 .main-pictures {
+  align-items: center;
   margin-bottom: 94px;
+  display: flex;
+  flex-direction: column;
 }
 
-.main-pictures > ul {
+.pictures-ul{
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 30px;
 }
 
 .main-pictures-h2 {
   color: #212121;
-  text-align: center;
+
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -401,41 +379,33 @@ menu {
   margin-bottom: 50px;
 }
 
-.pictures-ul-li:not(:last-child) {
-  margin-right: 16px;
-}
+/* </налаштування main-pictures> */
 
-/* </налаштування третьої section> */
-
-/* <налаштування третьої section> */
+/* <налаштування our-team> */
 
 .main-our-team {
   padding-bottom: 94px;
   padding-top: 94px;
   width: auto;
-  height: 648px;
   background: #f5f4fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.main-our-team > ul {
+.our-team-ul{
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 30px;
 }
 
 .main-our-team-h2 {
   color: #212121;
-  text-align: center;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 1.08px;
   margin-bottom: 50px;
-}
-
-.our-team-ul-li:not(:last-child) {
-  margin-right: 26px;
 }
 
 .social-team {
@@ -466,28 +436,15 @@ menu {
   background-position: center center;
 }
 
-.social-item-team:hover {
-  cursor: pointer;
-}
-
 .social-item-team:hover svg {
   fill: rgba(255, 255, 255, 1);
 }
-/*
-.social-item-team:hover svg{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: rgba(255, 255, 255, 1);
-} */
 
 .our-team-ul-li-h3 {
   color: #212121;
   text-align: center;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: 0.48px;
   margin-top: 30px;
 }
@@ -496,9 +453,7 @@ menu {
   color: #757575;
   text-align: center;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: 0.48px;
   margin-bottom: 30px;
 }
@@ -512,7 +467,13 @@ menu {
   margin-bottom: 94px;
 }
 
-/* </налаштування третьої section> */
+.social-item-link{
+  width: auto;
+}
+
+/* </налаштування our-team> */
+
+/* <налаштування regular-customers> */
 
 .main-regular-customers {
   display: flex;
@@ -562,6 +523,8 @@ menu {
   height: 60px;
   fill: rgba(175, 177, 184, 1);
 }
+
+/* </налаштування regular-customers> */
 
 /* </налаштування main> */
 
