@@ -14,11 +14,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>WebStudio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <a href="index.html" class="header-logo"
         ><span class="header-logo-span">Web</span>Studio</a
       >
@@ -65,7 +69,7 @@
       <section class="main-features container">
         <ul class="main-features-ul">
           <li class="main-features-ul-li">
-            <svg width="70px" height="70px" class="features-item-svg">
+            <svg width="70" height="70" class="features-item-svg">
               <use href="img/symbol-defs.svg#icon-antenna"></use>
             </svg>
             <h3 class="features-ul-li-h3">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -110,25 +114,45 @@
         <h2 class="main-pictures-h2">Чим ми займаємося</h2>
         <ul class="pictures-ul">
           <li class="pictures-ul-li">
-            <img
-              src="img/What-do-we-do1.jpg"
-              alt="Людина працює за ноутбуком"
-              width="370px"
-            />
+            <div class="picture-wrap">
+              <img
+                src="img/What-do-we-do1.jpg"
+                alt="Людина працює за ноутбуком"
+                class="picture"
+                width="370px"
+              />
+
+              <div class="picture-div">
+                <p class="picture-p">Десктопні додатки</p>
+              </div>
+            </div>
           </li>
           <li class="pictures-ul-li">
-            <img
-              src="img/What-do-we-do2.jpg"
-              alt="Людина дивиться в телефон і поряд з ним ноутбук"
-              width="370px"
-            />
+            <div class="picture-wrap">
+              <img
+                src="img/What-do-we-do2.jpg"
+                alt="Людина дивиться в телефоні поряд з ним ноутбук"
+                class="picture"
+                width="370px"
+              />
+
+              <div class="picture-div">
+                <p class="picture-p">Мобільні додатки</p>
+              </div>
+            </div>
           </li>
           <li class="pictures-ul-li">
-            <img
-              src="img/What-do-we-do3.jpg"
-              alt="Людина малює на планшеті"
-              width="370px"
-            />
+            <div class="picture-wrap">
+              <img
+                src="img/What-do-we-do3.jpg"
+                alt="Людина малює на планшеті"
+                class="picture"
+                width="370px"
+              />
+              <div class="picture-div">
+                <p class="picture-p">Дизайнерські рішення</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
@@ -142,7 +166,10 @@
             <p class="our-team-ul-li-p">Product Designer</p>
             <ul class="social-team">
               <li class="social-item-team">
-                <a href="https://www.instagram.com/" class="social-item-link" target="_blank"
+                <a
+                  href="https://www.instagram.com/"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -154,7 +181,10 @@
                 </a>
               </li>
               <li class="social-item-team">
-                <a href="https://twitter.com/?lang=uk" class="social-item-link" target="_blank"
+                <a
+                  href="https://twitter.com/?lang=uk"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -166,7 +196,10 @@
                 </a>
               </li>
               <li class="social-item-team">
-                <a href="https://uk-ua.facebook.com/" class="social-item-link" target="_blank"
+                <a
+                  href="https://uk-ua.facebook.com/"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -178,7 +211,10 @@
                 </a>
               </li>
               <li class="social-item-team">
-                <a href="https://www.linkedin.com/" class="social-item-link" target="_blank"
+                <a
+                  href="https://www.linkedin.com/"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -197,7 +233,10 @@
             <p class="our-team-ul-li-p">Frontend Developer</p>
             <ul class="social-team">
               <li class="social-item-team">
-                <a href="https://www.instagram.com/" class="social-item-link" target="_blank"
+                <a
+                  href="https://www.instagram.com/"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -209,7 +248,10 @@
                 </a>
               </li>
               <li class="social-item-team">
-                <a href="https://twitter.com/?lang=uk" class="social-item-link" target="_blank"
+                <a
+                  href="https://twitter.com/?lang=uk"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -221,7 +263,10 @@
                 </a>
               </li>
               <li class="social-item-team">
-                <a href="https://uk-ua.facebook.com/" class="social-item-link" target="_blank"
+                <a
+                  href="https://uk-ua.facebook.com/"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -233,7 +278,10 @@
                 </a>
               </li>
               <li class="social-item-team">
-                <a href="https://www.linkedin.com/" class="social-item-link" target="_blank"
+                <a
+                  href="https://www.linkedin.com/"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -252,7 +300,10 @@
             <p class="our-team-ul-li-p">Marketing</p>
             <ul class="social-team">
               <li class="social-item-team">
-                <a href="https://www.instagram.com/" class="social-item-link" target="_blank"
+                <a
+                  href="https://www.instagram.com/"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -264,7 +315,10 @@
                 </a>
               </li>
               <li class="social-item-team">
-                <a href="https://twitter.com/?lang=uk" class="social-item-link" target="_blank"
+                <a
+                  href="https://twitter.com/?lang=uk"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -276,7 +330,10 @@
                 </a>
               </li>
               <li class="social-item-team">
-                <a href="https://uk-ua.facebook.com/" class="social-item-link" target="_blank"
+                <a
+                  href="https://uk-ua.facebook.com/"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -288,7 +345,10 @@
                 </a>
               </li>
               <li class="social-item-team">
-                <a href="https://www.linkedin.com/" class="social-item-link" target="_blank"
+                <a
+                  href="https://www.linkedin.com/"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -307,7 +367,10 @@
             <p class="our-team-ul-li-p">UI Designer</p>
             <ul class="social-team">
               <li class="social-item-team">
-                <a href="https://www.instagram.com/" class="social-item-link" target="_blank"
+                <a
+                  href="https://www.instagram.com/"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -319,7 +382,10 @@
                 </a>
               </li>
               <li class="social-item-team">
-                <a href="https://twitter.com/?lang=uk" class="social-item-link" target="_blank"
+                <a
+                  href="https://twitter.com/?lang=uk"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -331,7 +397,10 @@
                 </a>
               </li>
               <li class="social-item-team">
-                <a href="https://uk-ua.facebook.com/" class="social-item-link" target="_blank"
+                <a
+                  href="https://uk-ua.facebook.com/"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -343,7 +412,10 @@
                 </a>
               </li>
               <li class="social-item-team">
-                <a href="https://www.linkedin.com/" class="social-item-link" target="_blank"
+                <a
+                  href="https://www.linkedin.com/"
+                  class="social-item-link"
+                  target="_blank"
                   ><svg
                     width="44px"
                     height="44px"
@@ -431,7 +503,10 @@
           <h4 class="footer-h4">приєднуйтесь</h4>
           <ul class="social-footer">
             <li class="footer-social-item">
-              <a href="https://www.instagram.com/" class="footer-social-item-link" target="_blank"
+              <a
+                href="https://www.instagram.com/"
+                class="footer-social-item-link"
+                target="_blank"
                 ><svg
                   width="44px"
                   height="44px"
@@ -443,7 +518,10 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="https://twitter.com/?lang=uk" class="footer-social-item-link" target="_blank"
+              <a
+                href="https://twitter.com/?lang=uk"
+                class="footer-social-item-link"
+                target="_blank"
                 ><svg
                   width="44px"
                   height="44px"
@@ -455,7 +533,10 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="https://uk-ua.facebook.com/" class="footer-social-item-link" target="_blank"
+              <a
+                href="https://uk-ua.facebook.com/"
+                class="footer-social-item-link"
+                target="_blank"
                 ><svg
                   width="44px"
                   height="44px"
@@ -467,7 +548,10 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="https://www.linkedin.com/" class="footer-social-item-link" target="_blank"
+              <a
+                href="https://www.linkedin.com/"
+                class="footer-social-item-link"
+                target="_blank"
                 ><svg
                   width="44px"
                   height="44px"
@@ -482,5 +566,12 @@
         </div>
       </div>
     </footer>
+    <div class="shevron">
+      <a href="#header">
+        <svg width="50" height="50" class="svg-shevron">
+          <use href="img/symbol-defs.svg#icon-arrow_up"></use>
+        </svg>
+      </a>
+    </div>
   </body>
 </html>

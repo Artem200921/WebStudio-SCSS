@@ -224,7 +224,7 @@ menu {
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-pictures{
+.portfolio-pictures {
   width: 370px;
   height: 295px;
 }
@@ -313,7 +313,7 @@ menu {
   display: flex;
   justify-content: center;
   align-items: center;
- column-gap: 30px;
+  column-gap: 30px;
 }
 
 .main-features-ul-li svg {
@@ -329,22 +329,17 @@ menu {
 }
 
 .features-ul-li-h3 {
-  width: 270px;
   color: #212121;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .features-ul-li-p {
-  width: 270px;
   color: #757575;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
@@ -361,7 +356,7 @@ menu {
   flex-direction: column;
 }
 
-.pictures-ul{
+.pictures-ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,13 +365,42 @@ menu {
 
 .main-pictures-h2 {
   color: #212121;
-
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
   margin-bottom: 50px;
+}
+
+.picture-wrap{
+  position: relative;
+}
+
+.picture-wrap:hover .picture-div{
+  visibility: visible;
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+
+.picture-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  background: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  position: absolute;
+  bottom: 5px;
+  visibility: hidden;
+}
+
+.picture-p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
 
 /* </налаштування main-pictures> */
@@ -393,7 +417,7 @@ menu {
   align-items: center;
 }
 
-.our-team-ul{
+.our-team-ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -467,7 +491,7 @@ menu {
   margin-bottom: 94px;
 }
 
-.social-item-link{
+.social-item-link {
   width: auto;
 }
 
@@ -502,12 +526,6 @@ menu {
   fill: rgba(33, 150, 243, 1);
 }
 
-.regular-customers-list-item:hover {
-  border-radius: 4px;
-  border: 1px solid #2196f3;
-  cursor: pointer;
-}
-
 .regular-customers-list-item {
   display: flex;
   justify-content: center;
@@ -516,6 +534,12 @@ menu {
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
+}
+
+.regular-customers-list-item:hover {
+  border-radius: 4px;
+  border: 1px solid #2196f3;
+  cursor: pointer;
 }
 
 .regular-customers-svg {
@@ -606,7 +630,7 @@ menu {
   display: flex;
 }
 
-.footer-social-item{
+.footer-social-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -616,7 +640,7 @@ menu {
   background-image: url(img/ellipse-footer.png);
 }
 
-.footer-social-item:hover{
+.footer-social-item:hover {
   background-image: url(img/ellipse.png);
   cursor: pointer;
 }
@@ -628,3 +652,27 @@ menu {
 }
 
 /* </налаштування footer> */
+
+
+.shevron{
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 5px 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.svg-shevron{
+  fill: #afb1b8;
+}
+
+.svg-shevron:hover{
+  fill: #fff;
+}
+
+.shevron:hover{
+  background-color: #2196f3;
+}
