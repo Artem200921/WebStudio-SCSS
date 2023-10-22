@@ -61,9 +61,59 @@
     <main>
       <section class="main-section">
         <h1 class="main-section-h1">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="main-section-button">
+        <button class="main-section-button" data-modal-open>
           Замовити послугу
         </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="btn" data-modal-close>
+              <svg width="18" height="18" class="svg-hero">
+                <use href="img/symbol-defs.svg#icon-close-black"></use>
+              </svg>
+            </button>
+            <h2 class="modal-h2">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="modal-form">
+              <label class="modal-label">
+                Ім'я
+                <input type="name" name="name" class="modal-input" required/>
+                <svg width="18px" height="18px" class="svg-input">
+                  <use href="img/symbol-defs.svg#icon-person-black"></use>
+                </svg>
+              </label>
+              <label class="modal-label">
+                Телефон
+                <input type="number" name="number" class="modal-input" required/>
+                <svg width="18px" height="18px" class="svg-input">
+                  <use href="img/symbol-defs.svg#icon-phone-black"></use>
+                </svg>
+              </label>
+              <label class="modal-label">
+                Пошта
+                <input type="mail" name="mail" class="modal-input" required/>
+                <svg width="18px" height="18px" class="svg-input">
+                  <use href="img/symbol-defs.svg#icon-email-black"></use>
+                </svg>
+              </label>
+              <label class="modal-label">
+                Коментар
+                <div class="textarea-modal-div">
+                  <textarea
+                    name="textarea"
+                    id=""
+                    placeholder="Введіть текст"
+                    class="textarea-modal"
+                    maxlength="200"
+                  ></textarea>
+                </div>
+              </label>
+              <label class="modal-label modal-label-a">
+                <input type="checkbox" name="checkbox" class="modal-checkbox"/>
+                Погоджуюся з розсилкою та приймаю <a href="#" class="modal-a"> Умови договору</a>
+              </label>
+              <button class="button-modal container">Відправити</button>
+            </form>
+          </div>
+        </div>
       </section>
 
       <section class="main-features container">
@@ -573,5 +623,6 @@
         </svg>
       </a>
     </div>
+    <script src="modal.js"></script>
   </body>
 </html>
