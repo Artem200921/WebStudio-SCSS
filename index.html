@@ -75,21 +75,27 @@
             <form class="modal-form">
               <label class="modal-label">
                 Ім'я
-                <input type="name" name="name" class="modal-input" required/>
+                <input type="name" name="name" class="modal-input" required />
                 <svg width="18px" height="18px" class="svg-input">
                   <use href="img/symbol-defs.svg#icon-person-black"></use>
                 </svg>
               </label>
               <label class="modal-label">
                 Телефон
-                <input type="number" name="number" class="modal-input" required/>
+                <input
+                  type="number"
+                  name="number"
+                  class="modal-input"
+                  maxlength="8"
+                  required
+                />
                 <svg width="18px" height="18px" class="svg-input">
                   <use href="img/symbol-defs.svg#icon-phone-black"></use>
                 </svg>
               </label>
               <label class="modal-label">
                 Пошта
-                <input type="mail" name="mail" class="modal-input" required/>
+                <input type="mail" name="mail" class="modal-input" required />
                 <svg width="18px" height="18px" class="svg-input">
                   <use href="img/symbol-defs.svg#icon-email-black"></use>
                 </svg>
@@ -107,8 +113,9 @@
                 </div>
               </label>
               <label class="modal-label modal-label-a">
-                <input type="checkbox" name="checkbox" class="modal-checkbox"/>
-                Погоджуюся з розсилкою та приймаю <a href="#" class="modal-a"> Умови договору</a>
+                <input type="checkbox" name="checkbox" class="modal-checkbox" />
+                Погоджуюся з розсилкою та приймаю
+                <a href="#" class="modal-a"> Умови договору</a>
               </label>
               <button class="button-modal container">Відправити</button>
             </form>
