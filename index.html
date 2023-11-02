@@ -28,14 +28,68 @@
       >
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item">
-            <a href="index.html" class="nav-item-a">Студія</a>
+          <li class="nav-item nav-item-overlay active_header-studio active_header">
+            <ul class="overlay-header-1">
+              <li class="overlay-header-item">
+                <a href="index.html" class="nav-item-a overlay-header-link"
+                  >Студія
+                </a>
+                <ul class="overlay-header-elements">
+                  <li>
+                    <a href="index.html" class="overlay-header-element-link"
+                      >Web</a
+                    >
+                  </li>
+                  <li>
+                    <a href="index.html" class="overlay-header-element-link"
+                      >Studio</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a href="portfolio.html" class="nav-item-a">Портфоліо</a>
+            <ul class="overlay-header-1">
+              <li class="overlay-header-item">
+                <a href="portfolio.html" class="nav-item-a overlay-header-link"
+                  >Портфоліо</a
+                >
+                <ul class="overlay-header-elements">
+                  <li>
+                    <a href="#" class="overlay-header-element-link">Фото</a>
+                  </li>
+                  <li>
+                    <a href="#" class="overlay-header-element-link">Програми</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-item-a">Контакти</a>
+            <ul class="overlay-header-1">
+              <li class="overlay-header-item">
+                <a href="index.html" class="nav-item-a overlay-header-link"
+                  >Контакти
+                </a>
+                <ul class="overlay-header-elements overlay-header-elements-2">
+                  <li>
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="overlay-header-element-link"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="tel:+380961111111"
+                      class="overlay-header-element-link"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -621,15 +675,28 @@
             </li>
           </ul>
         </div>
+        <div>
+          <form action="" class="footer-form">
+            <label for="#footer-input" class="footer-label">
+              <div class="footer-form-div">
+                Підпишіться на розсилку
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  class="footer-input"
+                  id="footer-input"
+                />
+              </div>
+              <button type="button" class="footer-button">
+                Підписатися
+                <svg width="24" height="24" class="form-footer-svg">
+                  <use href="img/symbol-defs.svg#icon-icon-send"></use>
+                </svg></button
+            ></label>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="shevron">
-      <a href="#header">
-        <svg width="50" height="50" class="svg-shevron">
-          <use href="img/symbol-defs.svg#icon-arrow_up"></use>
-        </svg>
-      </a>
-    </div>
     <script src="modal.js"></script>
   </body>
 </html>

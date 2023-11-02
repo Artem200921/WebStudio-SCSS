@@ -50,6 +50,78 @@ menu {
 
 /* </Скидальні та глобальні налаштування стилів> */
 
+.overlay-header-1 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.overlay-header-item {
+  position: relative;
+  display: flex;
+}
+
+.overlay-header-item:hover .overlay-header-elements {
+  visibility: visible;
+}
+
+.overlay-header-elements {
+  padding: 5px;
+  flex-direction: column;
+  position: absolute;
+  row-gap: 15px;
+  top: 100%;
+  right: -8px;
+  margin: 0;
+  display: flex;
+  background-color: #ccc;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.overlay-header-elements-2 {
+  right: -50px;
+}
+
+.overlay-header-element-link{
+  color: black;
+
+}
+
+.overlay-header-element-link:hover{
+  color: #2196f3;
+
+}
+
+.box-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.box-header:hover .overlay-header {
+  transform: translateX(0);
+}
+
+.overlay-header {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.54px;
+  padding: 64px 23px;
+  background: #188ce8;
+  width: 370px;
+  height: 294px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+
 /* <налаштування header> */
 
 .header-portfolio {
@@ -57,6 +129,7 @@ menu {
 }
 
 .header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -64,6 +137,7 @@ menu {
 }
 
 .header > ul {
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,6 +151,40 @@ menu {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+}
+
+.active_header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  position: relative;
+}
+
+.active_header-portfolio::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: -4px;
+  width: 78px;
+  height: 4px;
+  border-radius: 2px;
+  background: #2196f3;
+  margin-top: 28px;
+}
+
+.active_header-studio::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 48px;
+  height: 4px;
+  left: -1px;
+  border-radius: 2px;
+  background: #2196f3;
+  margin-top: 28px;
 }
 
 .header-logo-span {
@@ -94,6 +202,8 @@ menu {
 }
 
 .nav-item {
+  display: flex;
+  align-items: center;
   margin-left: 93px;
 }
 
@@ -234,13 +344,47 @@ menu {
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+.box:hover .overlay {
+  transform: translateX(0);
+}
+
+.overlay {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.54px;
+  padding: 64px 23px;
+  background: rgba(33, 150, 243, 0.9);
+  width: 370px;
+  height: 294px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+
+.second-list-item-div {
+  padding-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .second-list-item-h3 {
   color: #212121;
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
-  margin-top: 20px;
 }
 
 .second-list-item-p {
@@ -249,7 +393,6 @@ menu {
   font-weight: 400;
   line-height: 1.87;
   letter-spacing: 0.48px;
-  margin-bottom: 20px;
 }
 
 /* </налаштування main portfolio> */
@@ -793,6 +936,7 @@ menu {
 }
 
 .footer-list {
+  width: 231px;
   margin-top: 20px;
 }
 
@@ -849,27 +993,66 @@ menu {
   fill: rgba(255, 255, 255, 1);
 }
 
-/* </налаштування footer> */
+.footer-form {
+  margin-left: 93px;
+  width: 570px;
+  height: 86px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-.shevron {
-  background-color: #fff;
-  width: 50px;
+.footer-form-div {
+  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-label {
+  column-gap: 12px;
+  align-items: flex-end;
+  display: flex;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+}
+
+.footer-input {
+  outline: none;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.48px;
+  width: 358px;
   height: 50px;
-  border-radius: 50%;
-  padding: 5px 0;
-  position: sticky;
-  bottom: 20px;
-  right: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.svg-shevron {
-  fill: #afb1b8;
+.footer-button {
+  column-gap: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.svg-shevron:hover {
+.form-footer-svg {
   fill: #fff;
 }
 
-.shevron:hover {
-  background-color: #2196f3;
-}
+/* </налаштування footer> */
