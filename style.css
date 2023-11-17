@@ -52,22 +52,31 @@ menu {
 
 /* <animation> */
 
-@keyframes forItem{
-  0%{
+@keyframes modalFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes forItem {
+  0% {
     transform: skewY(0);
   }
-  100%{
+  100% {
     transform: skewY(10deg);
     animation-play-state: paused;
   }
 }
 
-@keyframes forButton{
-  0%{
+@keyframes forButton {
+  0% {
     transform: translateX(0);
     transform: scale(1);
   }
-  100%{
+  100% {
     transform: translateX(5px);
     transform: scale(1.25);
   }
@@ -487,7 +496,7 @@ menu {
   overflow: hidden;
 }
 
-.box:hover .overlay {
+.second-list-item:hover .overlay {
   transform: translateX(0);
 }
 
@@ -603,8 +612,13 @@ menu {
   overflow: hidden;
 }
 
+.modal:hover {
+  animation-name: modalFade;
+  animation-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal {
-  z-index: 20;
   display: flex;
   flex-direction: column;
   position: absolute;
