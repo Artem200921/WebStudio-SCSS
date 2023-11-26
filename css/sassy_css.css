@@ -1,4 +1,4 @@
-/* <Скидальні та глобальні налаштування стилів> */
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -22,7 +22,6 @@ ul {
   max-width: 100%;
   height: auto;
 } */
-
 body,
 h1,
 h2,
@@ -42,145 +41,149 @@ menu {
   list-style: none;
 }
 
+.main-section2 {
+  margin-bottom: 94px;
+}
+
+.main-section-list {
+  display: flex;
+  margin-bottom: 34px;
+  justify-content: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+
+.button-settings:nth-child(1) {
+  width: 73px;
+  height: 38px;
+}
+
+.button-settings:nth-child(2) {
+  width: 125px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.button-settings:nth-child(3) {
+  width: 112px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.button-settings:nth-child(4) {
+  width: 103px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.button-settings:nth-child(5) {
+  width: 130px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.global-button-settings {
+  height: inherit;
+  width: inherit;
+  border-radius: 4px;
+  background: #f5f4fa;
+  color: #212121;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.48px;
+  border: 0px;
+}
+
+.global-button-settings:hover {
+  background: #2196f3;
+  color: #fff;
+  animation-name: forButton;
+  animation-fill-mode: forwards;
+  animation-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.second-list {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+}
+
+.second-list-item:hover {
+  animation-name: forItem;
+  animation-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background: #fff;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-pictures {
+  width: 370px;
+  height: 295px;
+}
+
+.second-list-item {
+  background-color: #fff;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+.second-list-item:hover .overlay {
+  transform: translateX(0);
+}
+
+.overlay {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0.54px;
+  padding: 64px 23px;
+  background: rgba(33, 150, 243, 0.9);
+  width: 370px;
+  height: 294px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+
+.second-list-item-div {
+  padding-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.second-list-item-h3 {
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
+}
+
+.second-list-item-p {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.48px;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
-
-/* </Скидальні та глобальні налаштування стилів> */
-
-/* <animation> */
-
-@keyframes modalFade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes forItem {
-  0% {
-    transform: skewY(0);
-  }
-  100% {
-    transform: skewY(10deg);
-    animation-play-state: paused;
-  }
-}
-
-@keyframes forButton {
-  0% {
-    transform: translateX(0);
-    transform: scale(1);
-  }
-  100% {
-    transform: translateX(5px);
-    transform: scale(1.25);
-  }
-}
-
-@keyframes bounceHover {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(10px);
-  }
-}
-
-@keyframes changeHeaderScaleHover {
-  0% {
-    transform: rotateX(0);
-    transform: perspective(360deg);
-  }
-  50% {
-    transform: rotateX(90deg);
-    transform: perspective(360deg);
-  }
-  100% {
-    transform: rotateX(0);
-    transform: perspective(360deg);
-  }
-}
-
-@keyframes changeFooterScaleHover {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes rotateRegularCustomers {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(90deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
-@keyframes buttonClose {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.75);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes focusModal {
-  0% {
-    transform: skewX(0);
-  }
-  50% {
-    transform: skewX(30deg);
-  }
-  100% {
-    transform: skewX(0);
-  }
-}
-
-@keyframes hoverModal {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.75);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes translate {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* </animation> */
-
-/* <overlay> */
 
 .overlay-header-1 {
   margin: 0;
@@ -247,21 +250,131 @@ menu {
   left: 0;
   width: 100%;
   height: 100%;
-
   transform: translatey(100%);
   transition: transform 250ms ease;
 }
 
-/* </overlay> */
-
-/* <налаштування header> */
-
+@keyframes modalFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes forItem {
+  0% {
+    transform: skewY(0);
+  }
+  100% {
+    transform: skewY(10deg);
+    animation-play-state: paused;
+  }
+}
+@keyframes forButton {
+  0% {
+    transform: translateX(0);
+    transform: scale(1);
+  }
+  100% {
+    transform: translateX(5px);
+    transform: scale(1.25);
+  }
+}
+@keyframes bounceHover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+@keyframes changeHeaderScaleHover {
+  0% {
+    transform: rotateX(0);
+    transform: perspective(360deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+    transform: perspective(360deg);
+  }
+  100% {
+    transform: rotateX(0);
+    transform: perspective(360deg);
+  }
+}
+@keyframes changeFooterScaleHover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes rotateRegularCustomers {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes buttonClose {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes focusModal {
+  0% {
+    transform: skewX(0);
+  }
+  50% {
+    transform: skewX(30deg);
+  }
+  100% {
+    transform: skewX(0);
+  }
+}
+@keyframes hoverModal {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.75);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes translate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .header-portfolio {
   margin-bottom: 94px;
 }
 
 .header {
-  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  border-bottom: 1px solid rgb(236, 236, 236);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -396,161 +509,12 @@ menu {
 
 .header-item-svg {
   margin-right: 5px;
-  fill: rgba(117, 117, 117, 1);
+  fill: rgb(117, 117, 117);
 }
 
-/* </налаштування header> */
-
-/* <налаштування main portfolio> */
-
-.main-section2 {
-  margin-bottom: 94px;
-}
-
-.main-section-list {
-  display: flex;
-  margin-bottom: 34px;
-  justify-content: center;
-  column-gap: 8px;
-}
-
-.button-settings:nth-child(1) {
-  width: 73px;
-  height: 38px;
-}
-
-.button-settings:nth-child(2) {
-  width: 125px;
-  height: 38px;
-  flex-shrink: 0;
-}
-
-.button-settings:nth-child(3) {
-  width: 112px;
-  height: 38px;
-  flex-shrink: 0;
-}
-
-.button-settings:nth-child(4) {
-  width: 103px;
-  height: 38px;
-  flex-shrink: 0;
-}
-
-.button-settings:nth-child(5) {
-  width: 130px;
-  height: 38px;
-  flex-shrink: 0;
-}
-
-.global-button-settings {
-  height: inherit;
-  width: inherit;
-  border-radius: 4px;
-  background: #f5f4fa;
-  color: #212121;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.48px;
-  border: 0px;
-}
-
-.global-button-settings:hover {
-  background: #2196f3;
-  color: #fff;
-  animation-name: forButton;
-  animation-fill-mode: forwards;
-  animation-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.second-list {
-  flex-wrap: wrap;
-  display: flex;
-  gap: 30px;
-}
-
-.second-list-item:hover {
-  animation-name: forItem;
-  animation-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  background: #fff;
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio-pictures {
-  width: 370px;
-  height: 295px;
-}
-
-.second-list-item {
-  background-color: #fff;
-  flex-basis: calc((100% - 3 * 30px) / 3);
-}
-
-.box {
-  position: relative;
-  overflow: hidden;
-}
-
-.second-list-item:hover .overlay {
-  transform: translateX(0);
-}
-
-.overlay {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.55;
-  letter-spacing: 0.54px;
-  padding: 64px 23px;
-  background: rgba(33, 150, 243, 0.9);
-  width: 370px;
-  height: 294px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  transform: translatey(100%);
-  transition: transform 250ms ease;
-}
-
-.second-list-item-div {
-  padding-left: 24px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.second-list-item-h3 {
-  color: #212121;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 1.08px;
-}
-
-.second-list-item-p {
-  color: #757575;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.87;
-  letter-spacing: 0.48px;
-}
-
-/* </налаштування main portfolio> */
-
-/* <налаштування main> */
-
-/* <налаштування hero> */
 .main-section {
   background: #2f303a;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(img/hero_img.jpg), lightgray 0px -147.517px / 100% 170.667% no-repeat;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero.jpg), lightgray 0px -147.517px/100% 170.667% no-repeat;
   width: 1600px;
   height: 600px;
   padding: 0px 15px;
@@ -576,6 +540,7 @@ menu {
 }
 
 .main-section-button {
+  border: none;
   width: 216px;
   height: 50px;
   border-radius: 4px;
@@ -611,13 +576,13 @@ menu {
 .no-scroll {
   overflow: hidden;
 }
+
 /*
 .modal:hover {
   animation-name: modalFade;
   animation-duration: 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } */
-
 .modal {
   display: flex;
   flex-direction: column;
@@ -630,8 +595,7 @@ menu {
   padding: 15px;
   border-radius: 4px;
   background: #fff;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transform: translate(-50%, -50%);
   padding-top: 40px;
 }
@@ -661,7 +625,7 @@ menu {
 }
 
 .btn:hover svg {
-  fill: rgba(33, 150, 243, 1);
+  fill: rgb(33, 150, 243);
 }
 
 .btn:hover {
@@ -707,7 +671,7 @@ menu {
 }
 
 .modal-input:focus-within + .svg-input {
-  fill: rgba(33, 150, 243, 1);
+  fill: rgb(33, 150, 243);
 }
 
 .svg-input {
@@ -756,7 +720,7 @@ menu {
 
 .modal-a {
   margin-left: 5px;
-  color: rgba(33, 150, 243, 1);
+  color: rgb(33, 150, 243);
   text-decoration: underline;
 }
 
@@ -792,12 +756,6 @@ menu {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-/* </налаштування модалки> */
-
-/* </налаштування hero> */
-
-/* <налаштування features> */
-
 .main-features {
   display: flex;
   margin-bottom: 94px;
@@ -808,7 +766,8 @@ menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .main-features-ul-li svg {
@@ -840,10 +799,6 @@ menu {
   letter-spacing: 0.42px;
 }
 
-/* </налаштування features> */
-
-/* <налаштування main-pictures> */
-
 .main-pictures {
   align-items: center;
   margin-bottom: 94px;
@@ -855,7 +810,8 @@ menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .main-pictures-h2 {
@@ -899,10 +855,6 @@ menu {
   text-transform: uppercase;
 }
 
-/* </налаштування main-pictures> */
-
-/* <налаштування our-team> */
-
 .main-our-team {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -917,7 +869,8 @@ menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .main-our-team-h2 {
@@ -933,13 +886,14 @@ menu {
   justify-content: center;
   margin-bottom: 30px;
   margin-top: 16px;
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
 .team-item-svg {
   width: 20px;
   height: 20px;
-  fill: rgba(175, 177, 184, 1);
+  fill: rgb(175, 177, 184);
 }
 
 .social-item-team {
@@ -962,7 +916,7 @@ menu {
   animation-name: changeHeaderScaleHover;
   animation-duration: 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  fill: rgba(255, 255, 255, 1);
+  fill: rgb(255, 255, 255);
 }
 
 .our-team-ul-li-h3 {
@@ -986,8 +940,7 @@ menu {
 .our-team-ul-li {
   border-radius: 0px 0px 4px 4px;
   background: #fff;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: #fff;
   margin-bottom: 94px;
 }
@@ -995,10 +948,6 @@ menu {
 .social-item-link {
   width: auto;
 }
-
-/* </налаштування our-team> */
-
-/* <налаштування regular-customers> */
 
 .main-regular-customers {
   display: flex;
@@ -1018,13 +967,14 @@ menu {
 }
 
 .regular-customers-list {
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   display: flex;
   justify-content: center;
 }
 
 .regular-customers-list-item:hover svg {
-  fill: rgba(33, 150, 243, 1);
+  fill: rgb(33, 150, 243);
 }
 
 .regular-customers-list-item {
@@ -1049,14 +999,8 @@ menu {
 .regular-customers-svg {
   width: 106px;
   height: 60px;
-  fill: rgba(175, 177, 184, 1);
+  fill: rgb(175, 177, 184);
 }
-
-/* </налаштування regular-customers> */
-
-/* </налаштування main> */
-
-/* <налаштування footer> */
 
 .footer {
   background: #2f303a;
@@ -1072,7 +1016,8 @@ menu {
 }
 
 .footer-div4ik {
-  column-gap: 70px;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
   display: flex;
 }
 
@@ -1131,7 +1076,8 @@ menu {
 }
 
 .social-footer {
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   display: flex;
 }
 
@@ -1146,7 +1092,7 @@ menu {
 }
 
 .footer-social-item:hover {
-  background-color: rgba(33, 150, 243, 1);
+  background-color: rgb(33, 150, 243);
   cursor: pointer;
   animation-duration: 250ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1156,7 +1102,7 @@ menu {
 .footer-item-svg {
   width: 20px;
   height: 20px;
-  fill: rgba(255, 255, 255, 1);
+  fill: rgb(255, 255, 255);
 }
 
 .footer-form {
@@ -1175,7 +1121,8 @@ menu {
 }
 
 .footer-label {
-  column-gap: 12px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
   align-items: flex-end;
   display: flex;
   color: #fff;
@@ -1201,7 +1148,9 @@ menu {
 }
 
 .footer-button {
-  column-gap: 10px;
+  border: none;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -1219,6 +1168,4 @@ menu {
 
 .form-footer-svg {
   fill: #fff;
-}
-
-/* </налаштування footer> */
+}/*# sourceMappingURL=sassy_css.css.map */
