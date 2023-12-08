@@ -15,7 +15,6 @@
 
 .main-section-h1 {
   height: 120px;
-  color: #fff;
   width: 697px;
   text-align: center;
   font-size: 44px;
@@ -33,7 +32,6 @@
   border-radius: 4px;
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -90,7 +88,6 @@
 }
 
 .modal-h2 {
-  color: #212121;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.6px;
@@ -111,18 +108,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.btn:hover svg {
-  fill: rgba(33, 150, 243, 1);
-}
+  &:hover svg {
+    fill: rgba(33, 150, 243, 1);
+  }
 
-.btn:hover {
-  animation-name: buttonClose;
-  animation-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    animation-name: buttonClose;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-
 .modal-form {
   margin-top: 12px;
   display: flex;
@@ -135,7 +131,6 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  color: #757575;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.12px;
@@ -149,20 +144,19 @@
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-}
 
-.modal-input:focus-within {
-  outline: none;
-  animation-name: focusModal;
-  animation-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid #2196f3;
-}
+  &:focus-within {
+    outline: none;
+    animation-name: focusModal;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #2196f3;
+  }
 
-.modal-input:focus-within+.svg-input {
-  fill: rgba(33, 150, 243, 1);
+  &:focus-within + .svg-input {
+    fill: rgba(33, 150, 243, 1);
+  }
 }
-
 .svg-input {
   bottom: 11px;
   left: 12px;
@@ -178,14 +172,13 @@
   height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-}
 
-.textarea-modal-div:focus-within {
-  animation-name: focusModal;
-  animation-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus-within {
+    animation-name: focusModal;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-
 .textarea-modal {
   width: 416px;
   height: 96px;
@@ -197,7 +190,6 @@
 
 .modal-label-a {
   padding-top: 20px;
-  color: #757575;
   font-size: 14px;
   font-weight: 400;
   line-height: 2.4;
@@ -209,7 +201,6 @@
 
 .modal-a {
   margin-left: 5px;
-  color: rgba(33, 150, 243, 1);
   text-decoration: underline;
 }
 
@@ -225,7 +216,6 @@
 
 .button-modal {
   border: none;
-  color: #fff;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -236,11 +226,11 @@
   border-radius: 4px;
   background: #188ce8;
   cursor: pointer;
-}
 
-.button-modal:hover {
-  animation-name: hoverModal;
-  animation-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  &:hover {
+    animation-name: hoverModal;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
 }

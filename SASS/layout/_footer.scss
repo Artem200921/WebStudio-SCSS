@@ -4,8 +4,11 @@
   padding-bottom: 60px;
   display: flex;
   align-items: center;
-}
 
+  & > ul {
+    display: flex;
+  }
+}
 .footer-div {
   display: flex;
   flex-direction: column;
@@ -16,21 +19,13 @@
   display: flex;
 }
 
-.footer>ul {
-  display: flex;
-}
-
 .footer-logo {
-  color: #2196f3;
-  font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
 }
 
 .footer-logo-span {
-  color: #fff;
-  font-family: Raleway;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -44,7 +39,6 @@
 }
 
 .footer-item-a1 {
-  color: #fff;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -53,7 +47,6 @@
 }
 
 .footer-item-a2 {
-  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -62,7 +55,6 @@
 }
 
 .footer-h4 {
-  color: #fff;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -83,16 +75,15 @@
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-}
 
-.footer-social-item:hover {
-  background-color: rgba(33, 150, 243, 1);
-  cursor: pointer;
-  animation-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-name: changeFooterScaleHover;
+  &:hover {
+    background-color: rgba(33, 150, 243, 1);
+    cursor: pointer;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-name: changeFooterScaleHover;
+  }
 }
-
 .footer-item-svg {
   width: 20px;
   height: 20px;
@@ -118,7 +109,6 @@
   column-gap: 12px;
   align-items: flex-end;
   display: flex;
-  color: #fff;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -127,7 +117,6 @@
 .footer-input {
   outline: none;
   padding-left: 16px;
-  color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
@@ -143,7 +132,6 @@
 .footer-button {
   border: none;
   column-gap: 10px;
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;

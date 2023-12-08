@@ -16,7 +16,6 @@
 }
 
 .main-our-team-h2 {
-  color: #212121;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
@@ -44,24 +43,22 @@
   align-items: center;
   width: 44px;
   height: 44px;
-}
 
-.social-item-team:hover {
-  animation-name: changeHeaderScaleHover;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-duration: 250ms;
-  background-color: #2196f3;
-}
+  &:hover {
+    animation-name: changeHeaderScaleHover;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-duration: 250ms;
+    background-color: #2196f3;
+  }
 
-.social-item-team:hover svg {
-  animation-name: changeHeaderScaleHover;
-  animation-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  fill: rgba(255, 255, 255, 1);
+  &:hover svg {
+    animation-name: changeHeaderScaleHover;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: rgba(255, 255, 255, 1);
+  }
 }
-
 .our-team-ul-li-h3 {
-  color: #212121;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -70,7 +67,6 @@
 }
 
 .our-team-ul-li-p {
-  color: #757575;
   text-align: center;
   font-size: 16px;
   font-weight: 400;

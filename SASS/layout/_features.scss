@@ -1,17 +1,17 @@
-.main-features {
+.main__features {
   display: flex;
   margin-bottom: 94px;
   margin-top: 94px;
 }
 
-.main-features-ul {
+.features__ul {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 30px;
 }
 
-.main-features-ul-li svg {
+.features__li svg {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -19,12 +19,11 @@
   padding: 25px 100px;
 }
 
-.main-features-ul-li2 {
+.features__li2 {
   align-self: start;
 }
 
-.features-ul-li-h3 {
-  color: #212121;
+.features__h3 {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -32,8 +31,7 @@
   margin-bottom: 10px;
 }
 
-.features-ul-li-p {
-  color: #757575;
+.features__p {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;

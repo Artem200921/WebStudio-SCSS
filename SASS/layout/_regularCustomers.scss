@@ -8,7 +8,6 @@
 }
 
 .regular-customers-h2 {
-  color: #212121;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
@@ -21,10 +20,6 @@
   justify-content: center;
 }
 
-.regular-customers-list-item:hover svg {
-  fill: rgba(33, 150, 243, 1);
-}
-
 .regular-customers-list-item {
   display: flex;
   justify-content: center;
@@ -33,17 +28,20 @@
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
-}
 
-.regular-customers-list-item:hover {
-  animation-name: rotateRegularCustomers;
-  animation-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 4px;
-  border: 1px solid #2196f3;
-  cursor: pointer;
-}
+  &:hover svg {
+    fill: rgba(33, 150, 243, 1);
+  }
 
+  &:hover {
+    animation-name: rotateRegularCustomers;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
+    border: 1px solid #2196f3;
+    cursor: pointer;
+  }
+}
 .regular-customers-svg {
   width: 106px;
   height: 60px;
