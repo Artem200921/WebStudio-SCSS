@@ -2,8 +2,10 @@
 @import 'utils/container';
 @import 'utils/overlay';
 @import 'utils/animation';
-@import 'utils/colors';
+@import 'utils/mixins';
+@import 'utils/placeholders';
 @import 'utils/fonts';
+@import 'utils/colors';
 @import 'layout/header';
 @import 'layout/hero';
 @import 'layout/features';

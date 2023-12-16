@@ -1,13 +1,11 @@
 .main__features {
-  display: flex;
+  @extend %flex;
   margin-bottom: 94px;
   margin-top: 94px;
 }
 
 .features__ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-all-settings;
   column-gap: 30px;
 }
 
@@ -24,6 +22,7 @@
 }
 
 .features__h3 {
+  color: $color-212121;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -32,6 +31,7 @@
 }
 
 .features__p {
+  color: $color-757575;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;

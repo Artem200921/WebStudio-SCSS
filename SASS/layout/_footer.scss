@@ -1,31 +1,33 @@
 .footer {
-  background: #2f303a;
+  @extend %flex;
+  background: $color-2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
   align-items: center;
 
   & > ul {
-    display: flex;
+    @extend %flex;
   }
 }
 .footer-div {
-  display: flex;
+  @extend %flex;
   flex-direction: column;
 }
 
 .footer-div4ik {
+  @extend %flex;
   column-gap: 70px;
-  display: flex;
 }
 
 .footer-logo {
+  color: $color-2196f3;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
 }
 
 .footer-logo-span {
+  color: $color-fff;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -39,6 +41,7 @@
 }
 
 .footer-item-a1 {
+  color: $color-fff;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -47,6 +50,7 @@
 }
 
 .footer-item-a2 {
+  color: $color-ffffff99;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -55,6 +59,7 @@
 }
 
 .footer-h4 {
+  color: $color-fff;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -63,14 +68,12 @@
 }
 
 .social-footer {
+  @extend %flex;
   column-gap: 10px;
-  display: flex;
 }
 
 .footer-social-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-all-settings;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -91,30 +94,32 @@
 }
 
 .footer-form {
+  @extend %flex;
   margin-left: 93px;
   width: 570px;
   height: 86px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .footer-form-div {
+  @extend %flex;
   row-gap: 20px;
-  display: flex;
   flex-direction: column;
 }
 
 .footer-label {
+  @extend %flex;
+  color: $color-fff;
   column-gap: 12px;
   align-items: flex-end;
-  display: flex;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
 }
 
 .footer-input {
+  color: $color-ffffff99;
   outline: none;
   padding-left: 16px;
   font-size: 16px;
@@ -130,11 +135,10 @@
 }
 
 .footer-button {
+  color: $color-fff;
+  @extend %flex-all-settings;
   border: none;
   column-gap: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -142,10 +146,10 @@
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  background: #2196f3;
+  background: $color-2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .form-footer-svg {
-  fill: #fff;
+  fill: $color-fff;
 }

@@ -3,20 +3,19 @@
 }
 
 .header {
-  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  @extend %flex-all-settings;
+  border-bottom: 1px solid $color-ececec;
   height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   & > ul {
+    @extend %flex;
     height: 80px;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 .header-logo {
+  color: $color-000;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -25,7 +24,7 @@
 }
 
 .active_header {
-  display: flex;
+  @extend %flex;
   align-items: center;
   height: 80px;
   position: relative;
@@ -34,31 +33,32 @@
 .active_header-portfolio::after {
   content: "";
   position: absolute;
-  display: flex;
+  @extend %flex;
   bottom: 0;
   right: -4px;
   width: 78px;
   height: 4px;
   border-radius: 2px;
-  background: #2196f3;
+  background: $color-2196f3;
   margin-top: 28px;
 }
 
 .active_header-studio::after {
   content: "";
   position: absolute;
-  display: flex;
+  @extend %flex;
   justify-content: center;
   bottom: 0;
   width: 48px;
   height: 4px;
   left: -1px;
   border-radius: 2px;
-  background: #2196f3;
+  background: $color-2196f3;
   margin-top: 28px;
 }
 
 .header-logo-span {
+  color: $color-2196f3;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -67,11 +67,11 @@
 }
 
 .nav-list {
-  display: flex;
+  @extend %flex;
 }
 
 .nav-item {
-  display: flex;
+  @extend %flex;
   align-items: center;
   margin-left: 93px;
 
@@ -80,6 +80,7 @@
   }
 }
 .nav-item-a {
+  color: $color-212121;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -87,10 +88,15 @@
   letter-spacing: 0.28px;
 
   &:hover {
+    color: $color-2196f3;
     animation-fill-mode: forwards;
     animation-duration: 250ms;
     animation-name: bounceHover;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover svg{
+    fill: $color-2196f3;
   }
 }
 .header-items {
@@ -98,7 +104,7 @@
 }
 
 .header-item {
-  display: flex;
+  @extend %flex;
   align-items: center;
 
   &:not(:first-child) {
@@ -106,6 +112,7 @@
   }
 }
 .header-item-a {
+  color: $color-757575;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -113,6 +120,7 @@
   letter-spacing: 0.28px;
 
   &:hover {
+    color: $color-2196f3;
     animation-fill-mode: forwards;
     animation-duration: 250ms;
     animation-name: bounceHover;
@@ -120,5 +128,6 @@
   }
 }
 .header-item-svg {
+  fill: $color-757575;
   margin-right: 5px;
 }
