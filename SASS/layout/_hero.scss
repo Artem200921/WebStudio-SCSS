@@ -3,7 +3,9 @@
   color: $color-fff;
   background: $color-2f303a;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../img/hero.jpg), lightgray 0px -147.517px / 100% 170.667% no-repeat;
+    url(../../img/hero-section.jpg),
+    lightgray 0px -147.517px / 100% 170.667% no-repeat;
+  background-position: center center;
   width: 1600px;
   height: 600px;
   padding: 0px 15px;
