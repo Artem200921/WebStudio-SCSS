@@ -1,15 +1,13 @@
-.header-portfolio {
-  margin-bottom: 94px;
-}
 
 .header {
   @extend %flex-all-settings;
   border-bottom: 1px solid $color-ececec;
   height: 80px;
 
-  & > ul {
+  &-items {
     @extend %flex;
     height: 80px;
+    margin-left: 344px;
     justify-content: center;
     align-items: center;
   }
@@ -32,8 +30,8 @@
 
 .active_header-portfolio::after {
   content: "";
-  position: absolute;
   @extend %flex;
+  position: absolute;
   bottom: 0;
   right: -4px;
   width: 78px;
@@ -45,8 +43,8 @@
 
 .active_header-studio::after {
   content: "";
-  position: absolute;
   @extend %flex;
+  position: absolute;
   justify-content: center;
   bottom: 0;
   width: 48px;
@@ -99,9 +97,6 @@
     fill: $color-2196f3;
   }
 }
-.header-items {
-  margin-left: 344px;
-}
 
 .header-item {
   @extend %flex;
@@ -131,3 +126,49 @@
   fill: $color-757575;
   margin-right: 5px;
 }
+
+.header-modal-btn-header{
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+// modal-header
+
+
+// media-requests
+
+@media (min-width: 480px) {
+  .header-modal-btn-header{
+    margin-left: 270px;
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
+  .header-items {
+    display: none;
+  }
+  .header-item-a {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-modal-div{
+    display: none;
+  }
+  .nav {
+    display: flex;
+  }
+  .header-items {
+    display: flex;
+  }
+  .header-item-a {
+    display: flex;
+  }
+}
+

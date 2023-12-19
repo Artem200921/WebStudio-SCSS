@@ -1,6 +1,6 @@
 .main-section {
-  color: $color-fff;
   @extend %flex-all-settings;
+  color: $color-fff;
   background: $color-2f303a;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../../img/hero.jpg), lightgray 0px -147.517px / 100% 170.667% no-repeat;
@@ -14,7 +14,6 @@
 
 .main-section-h1 {
   color: $color-ececec;
-  height: 120px;
   width: 697px;
   text-align: center;
   font-size: 44px;
@@ -233,5 +232,39 @@
     animation-duration: 250ms;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (min-width: 480px) {
+  .main-section {
+    width: 480px;
+    height: 400px;
+  }
+  .main-section-h1 {
+    width: 460px;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.6; /* 161.538% */
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+  }
+  .main-section-button {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-section {
+    width: 1600px;
+    height: 600px;
+  }
+  .main-section-h1 {
+    width: 697px;
+    font-size: 44px;
+  }
+  .main-section-button {
+    width: 216px;
+    height: 50px;
   }
 }
