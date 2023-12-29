@@ -5,8 +5,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  & > ul {
-  }
 }
 
 .footer-div {
@@ -156,7 +154,32 @@
   fill: $color-fff;
 }
 
-@media (min-width: 380px) {
+@media (min-width: 320px) {
+  .footer {
+    height: 603px;
+  }
+  .footer-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-div {
+    align-items: center;
+    text-align: center;
+  }
+  .footer-h4 {
+    text-align: center;
+  }
+  .footer-label {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-input {
+    width: 290px;
+  }
+}
+
+@media (min-width: 480px) {
   .footer {
     height: 603px;
   }
