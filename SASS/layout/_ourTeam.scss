@@ -1,20 +1,17 @@
 .main-our-team {
-  @extend %flex;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   width: auto;
   background: #f5f4fa;
-  flex-direction: column;
-  align-items: center;
 }
 
 .our-team-ul {
-  @extend %flex-all-settings;
-  column-gap: 30px;
+  gap: 30px;
+  display: flex;
 }
 
 .our-team-img {
-  width: 270px;
 }
 
 .main-our-team-h2 {
@@ -22,14 +19,11 @@
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
-  margin-bottom: 50px;
 }
 
 .social-team {
-  @extend %flex;
-  justify-content: center;
-  margin-bottom: 30px;
   margin-top: 16px;
+  display: flex;
   column-gap: 10px;
 }
 
@@ -60,67 +54,77 @@
   }
 }
 .our-team-ul-li-h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: $color-212121;
-  text-align: center;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.48px;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 
 .our-team-ul-li-p {
   color: $color-757575;
-  text-align: center;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.48px;
-  margin-bottom: 30px;
 }
 
 .our-team-ul-li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 0px 0px 4px 4px;
   background: $color-fff;
   box-shadow: 0px 2px 1px 0px hsla(0, 0%, 0%, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: $color-fff;
-  margin-bottom: 94px;
 }
 
 .social-item-link {
   width: auto;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 380px) {
   .main-our-team {
-    padding-bottom: 60px;
+    row-gap: 30px;
     padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .our-team-img {
+    width: auto;
   }
   .our-team-ul {
     flex-direction: column;
   }
   .our-team-ul-li {
-    width: 450px;
+    width: auto;
+    padding-bottom: 24px;
   }
+}
+
+@media (min-width: 480px) {
   .our-team-img {
     width: 450px;
-    height: 460px;
+  }
+  .our-team-ul-li{
+    width: 450px;
   }
 }
 
 @media (min-width: 1200px) {
   .main-our-team {
-    padding-bottom: 94px;
     padding-top: 94px;
+    padding-bottom: 94px;
+    row-gap: 50px;
+  }
+  .our-team-img {
+    width: 270px;
   }
   .our-team-ul {
     flex-direction: row;
   }
   .our-team-ul-li {
     width: 270px;
-  }
-  .our-team-img {
-    width: 270px;
-    height: 260px;
+    padding-bottom: 30px;
   }
 }

@@ -1,16 +1,15 @@
 .main-section {
   @extend %flex-all-settings;
+  flex-direction: column;
   color: $color-fff;
   background: $color-2f303a;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../../img/hero-section.jpg),
     lightgray 0px -147.517px / 100% 170.667% no-repeat;
   background-position: center center;
-  width: 1600px;
-  height: 600px;
+  background-size: cover;
   padding: 0px 15px;
   text-align: center;
-  flex-direction: column;
   margin: auto;
 }
 
@@ -18,10 +17,7 @@
   color: $color-ececec;
   width: 697px;
   text-align: center;
-  font-size: 44px;
-  font-style: normal;
   font-weight: 900;
-  letter-spacing: 2.64px;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -29,14 +25,12 @@
 .main-section-button {
   color: $color-fff;
   border: none;
-  width: 216px;
   height: 50px;
   border-radius: 4px;
   background: $color-2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.96px;
@@ -72,10 +66,9 @@
 } */
 
 .modal {
-  @extend %flex;
+  display: flex;
   flex-direction: column;
   position: absolute;
-  align-items: center;
   top: 50%;
   left: 50%;
   width: 528px;
@@ -97,6 +90,7 @@
 }
 
 .btn {
+  @extend %flex-all-settings;
   cursor: pointer;
   background-color: $color-fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -108,7 +102,6 @@
   stroke: rgba(0, 0, 0, 0.1);
   width: 30px;
   height: 30px;
-  @extend %flex-all-settings;
 
   &:hover svg {
     fill: rgba(33, 150, 243, 1);
@@ -121,18 +114,19 @@
   }
 }
 .modal-form {
-  margin-top: 12px;
-  @extend %flex;
+  align-items: center;
+  display: flex;
   flex-direction: column;
+  margin-top: 12px;
   row-gap: 10px;
 }
 
 .modal-label {
-  @extend %flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   color: $color-757575;
   row-gap: 4px;
-  flex-direction: column;
-  align-items: start;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.12px;
@@ -141,9 +135,8 @@
 }
 
 .modal-input {
-  padding-left: 42px;
-  width: 448px;
   height: 40px;
+  padding-left: 42px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 
@@ -166,10 +159,7 @@
 }
 
 .textarea-modal-div {
-  @extend %flex-all-settings;
   padding: 12px 16px;
-  width: 448px;
-  height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 
@@ -180,24 +170,20 @@
   }
 }
 .textarea-modal {
-  width: 416px;
-  height: 96px;
-  flex-shrink: 0;
   border: none;
   resize: none;
   outline: none;
 }
 
 .modal-label-a {
-  @extend %flex;
+  display: flex;
+  flex-direction: row;
   color: $color-757575;
   padding-top: 20px;
   font-size: 14px;
   font-weight: 400;
   line-height: 2.4;
   letter-spacing: 0.42px;
-  justify-content: center;
-  flex-direction: row;
 }
 
 .modal-a {
@@ -217,6 +203,7 @@
 }
 
 .button-modal {
+  color: $color-fff;
   border: none;
   text-align: center;
   font-size: 16px;
@@ -237,36 +224,79 @@
   }
 }
 
+@media (min-width: 380px) {
+  .main-section-h1 {
+    font-size: 26px;
+    letter-spacing: 1.56px;
+    line-height: 1.6;
+    width: auto;
+  }
+  .main-section {
+    height: 400px;
+  }
+}
+
 @media (min-width: 480px) {
   .main-section {
     width: 480px;
-    height: 400px;
   }
   .main-section-h1 {
-    width: 460px;
-    font-size: 26px;
-    font-weight: 900;
-    line-height: 1.6; /* 161.538% */
-    letter-spacing: 1.56px;
-    text-transform: uppercase;
+    width: 360px;
   }
   .main-section-button {
     width: 200px;
-    height: 50px;
+  }
+  .modal {
+    height: 610px;
+    width: 446px;
+  }
+  .modal-h2 {
+    text-align: center;
+    line-height: 1.5;
+  }
+  .modal-input {
+    width: 370px;
+  }
+  .textarea-modal-div {
+    width: 370px;
+    height: 120px;
+  }
+  .textarea-modal {
+    width: 338px;
+    height: 96px;
   }
 }
 
 @media (min-width: 1200px) {
   .main-section {
-    width: 1600px;
+    width: 1200px;
     height: 600px;
   }
   .main-section-h1 {
-    width: 697px;
     font-size: 44px;
+    letter-spacing: 2.64px;
+    line-height: normal;
+    width: 696px;
   }
   .main-section-button {
     width: 216px;
-    height: 50px;
+  }
+  .modal-h2 {
+    line-height: normal;
+  }
+  .modal-input {
+    width: 450px;
+  }
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .textarea-modal-div {
+    width: 448px;
+    height: 120px;
+  }
+  .textarea-modal {
+    width: 416px;
+    height: 96px;
   }
 }
