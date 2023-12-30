@@ -2,8 +2,14 @@
   display: flex;
 }
 
-%flex-all-settings{
+%flex-all-settings {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+%header-text-link {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
 }

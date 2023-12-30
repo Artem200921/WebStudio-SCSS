@@ -15,16 +15,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <header class="header header-portfolio">
+    <header class="header container header-border-bottom" id="header">
       <a href="index.html" class="header-logo"
         ><span class="header-logo-span">Web</span>Studio</a
       >
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item nav-item-overlay">
+          <li
+            class="nav-item nav-item-overlay active_header-studio active_header"
+          >
             <ul class="overlay-header-1">
               <li class="overlay-header-item">
                 <a href="index.html" class="nav-item-a overlay-header-link"
@@ -45,10 +47,10 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item active_header-portfolio active_header">
+          <li class="nav-item">
             <ul class="overlay-header-1">
               <li class="overlay-header-item">
-                <a href="index.html" class="nav-item-a overlay-header-link"
+                <a href="portfolio.html" class="nav-item-a overlay-header-link"
                   >Портфоліо</a
                 >
                 <ul class="overlay-header-elements">
@@ -107,12 +109,19 @@
           >
         </li>
       </ul>
+      <div class="header-modal-div">
+        <button class="header-modal-btn-header">
+          <svg width="40" height="40">
+            <use href="img/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
       <section class="main-section2 container">
-        <ul class="main-section-list container">
+        <ul class="main-section-list">
           <li class="button-settings">
-            <button class="global-button-settings">Усі</button>
+            <button class="global-button-settings local-button-settings">Усі</button>
           </li>
           <li class="button-settings">
             <button class="global-button-settings">Веб-сайти</button>
@@ -127,7 +136,7 @@
             <button class="global-button-settings">Маркетинг</button>
           </li>
         </ul>
-        <ul class="second-list container">
+        <ul class="second-list">
           <li class="second-list-item">
             <div class="box">
               <img src="img2/project1.jpg" alt="" class="portfolio-pictures" />
@@ -260,10 +269,10 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-div4ik">
+      <div class="container footer-wrap">
         <div class="footer-div">
           <a href="index.html" class="footer-logo"
-            ><span class="footer-logo-span">Web</span>Studio</a
+            >Web<span class="footer-logo-span">Studio</span></a
           >
           <ul class="footer-list">
             <li>
@@ -286,7 +295,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-div">
+        <div class="footer-div-svg">
           <h4 class="footer-h4">приєднуйтесь</h4>
           <ul class="social-footer">
             <li class="footer-social-item">
@@ -294,12 +303,7 @@
                 href="https://www.instagram.com/"
                 class="footer-social-item-link"
                 target="_blank"
-                ><svg
-                  width="44px"
-                  height="44px"
-                  class="footer-item-svg"
-                  viewBox="0px 0px 44px 44px"
-                >
+                ><svg width="44px" height="44px" class="footer-item-svg">
                   <use href="img/symbol-defs.svg#icon-instagram-2"></use>
                 </svg>
               </a>
@@ -351,11 +355,11 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-form-wrap">
           <form action="" class="footer-form">
             <label for="#footer-input" class="footer-label">
               <div class="footer-form-div">
-                Підпишіться на розсилку
+                <h4 class="footer-form-h4">Підпишіться на розсилку</h4>
                 <input
                   type="email"
                   placeholder="E-mail"
