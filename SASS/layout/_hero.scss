@@ -2,10 +2,8 @@
   @extend %flex-all-settings;
   flex-direction: column;
   color: $color-fff;
-  background: $color-2f303a;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(img/hero.png),
-    lightgray 0px -147.517px / 100% 170.667% no-repeat;
+    url(../img/hero.png) lighthsla(235, 10%, 21%, 0.4) 100% 170.667% no-repeat;
   background-position: center center;
   background-size: cover;
   text-align: center;
@@ -255,7 +253,7 @@
     width: 338px;
     height: 96px;
   }
-  .modal-label-a{
+  .modal-label-a {
     width: 100%;
   }
 }
@@ -280,7 +278,7 @@
   .modal-input {
     width: 450px;
   }
-  .modal-label{
+  .modal-label {
     width: 450px;
   }
   .modal {
@@ -295,7 +293,7 @@
     width: 416px;
     height: 96px;
   }
-  .modal-label-a{
+  .modal-label-a {
     width: 450px;
   }
 }
