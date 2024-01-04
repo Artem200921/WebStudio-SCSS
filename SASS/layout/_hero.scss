@@ -170,6 +170,7 @@
 }
 
 .modal-label-a {
+  justify-content: center;
   display: flex;
   flex-direction: row;
   color: $color-757575;
@@ -218,14 +219,14 @@
   }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) {
   .main-section-h1 {
     font-size: 26px;
     letter-spacing: 1.56px;
     line-height: 1.6;
-    width: 360px;
   }
   .main-section {
+    padding: 118px 60px;
     width: 480px;
   }
   .main-section-button {
@@ -258,10 +259,18 @@
   }
 }
 
+@media (min-width: 768px) {
+  .main-section {
+    padding: 118px 204px;
+    width: 768px;
+  }
+}
+
 @media (min-width: 1200px) {
   .main-section {
     width: 1200px;
     height: 600px;
+    padding: 200px 452px;
   }
   .main-section-h1 {
     font-size: 44px;

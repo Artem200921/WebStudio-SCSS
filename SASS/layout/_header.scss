@@ -1,7 +1,114 @@
 .header {
   @extend %flex-all-settings;
-  height: 80px;
   justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-modal-btn-header {
+  display: none;
+}
+.mobile-menu-contacts-item {
+  display: flex;
+}
+.header-modal-contacts-link-number {
+  color: #2196f3;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.68px;
+}
+.header-modal-contacts-link-mail {
+  margin-top: 32px;
+  color: #757575;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
+.mobile-menu {
+  margin-bottom: 180px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 36px;
+}
+
+.modal-header-social{
+  column-gap: 5px;
+  display: flex;
+  margin-top: 44px;
+}
+
+.modal-header-social-item:not(:first-child){
+  border-left: 1px solid #21212133;
+  padding-left: 5px;
+}
+
+.modal-header-social-link {
+  color: #2196f3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.36px;
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  &:hover svg {
+    fill: #2196f3;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  padding-top: 48px;
+  padding-left: 40px;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 796px;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  flex-direction: column;
+  display: flex;
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+}
+
+.header-modal-link {
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  &:hover {
+    color: #2196f3;
+  }
+}
+
+.modal-header-svg {
+  fill: #212121;
 }
 
 .header-logo {
@@ -13,18 +120,6 @@
 
 .header-logo-span {
   color: $color-2196f3;
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.78px;
-}
-
-.header-modal-btn-header {
-  border: none;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  align-items: center;
-  justify-content: center;
 }
 
 .nav {
@@ -39,23 +134,24 @@
 
 // media-requests
 
-@media (min-width: 480px) and (max-width: 768px) {
-  .header {
-    justify-content: space-between;
-  }
+@media (min-width: 480px) {
   .header-modal-div {
     display: flex;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
+  .header {
+    padding: 0;
+  }
   .header-items {
     display: flex;
-    align-items: center;
-    height: 80px;
-    column-gap: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 10px;
+    flex-direction: column;
   }
-
   .active_header {
     position: relative;
     height: 80px;
@@ -72,7 +168,6 @@
     background: $color-2196f3;
     margin-top: 28px;
   }
-
   .active_header-studio::after {
     content: "";
     display: flex;
@@ -93,16 +188,14 @@
     display: none;
   }
   .nav {
-    margin-left: 93px;
-    margin-right: 300px;
+    margin-left: 76px;
+    margin-right: 92px;
   }
-
   .nav-list {
     display: flex;
     align-items: center;
     column-gap: 50px;
   }
-
   .nav-item {
     display: flex;
     align-items: center;
@@ -127,9 +220,11 @@
   }
 
   .header-item-a {
-    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
     font-weight: 500;
-    letter-spacing: 0.28px;
+    letter-spacing: 0.24px;
     color: $color-757575;
 
     &:hover {
@@ -145,7 +240,26 @@
     }
   }
   .header-item-svg {
+    width: 12px;
+    height: 12px;
     fill: $color-757575;
     margin-right: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-item-a {
+    font-size: 14px;
+  }
+  .header-items {
+    flex-direction: row;
+  }
+  .header-item-svg {
+    width: 14px;
+    height: 14px;
+  }
+  .nav {
+    margin-left: 93px;
+    margin-right: 315px;
   }
 }
