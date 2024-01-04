@@ -63,8 +63,6 @@
 }
 
 @media (min-width: 768px) {
-  .main__features {
-  }
   .features__ul {
     flex-direction: row;
     width: 100%;
@@ -80,7 +78,6 @@
   }
   .features__div {
     width: 354px;
-
   }
 }
 
@@ -96,9 +93,6 @@
   .features__li {
     display: flex;
     flex-direction: column;
-    text-align: left;
-  }
-  .features__h3 {
     text-align: left;
   }
   .features__div {

@@ -924,9 +924,6 @@ menu {
     flex-direction: column;
     text-align: left;
   }
-  .features__h3 {
-    text-align: left;
-  }
   .features__div {
     width: 270px;
   }
@@ -1468,7 +1465,7 @@ menu {
 
 .second-list {
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 22px;
 }
 
 .second-list-item {
@@ -1535,6 +1532,15 @@ menu {
 @media (min-width: 480px) {
   .portfolio-pictures {
     width: 450px;
+    height: 294px;
+  }
+}
+@media (min-width: 768px) {
+  .main-section-list {
+    flex-wrap: nowrap;
+  }
+  .portfolio-pictures {
+    width: 354px;
     height: 294px;
   }
 }

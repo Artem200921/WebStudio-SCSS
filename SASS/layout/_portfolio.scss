@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 .main-section-list {
   @extend %flex;
@@ -67,7 +66,7 @@
 .second-list {
   @extend %flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 22px;
 }
 
 .second-list-item {
@@ -141,8 +140,18 @@
   }
 }
 
+@media (min-width: 768px) {
+  .main-section-list {
+    flex-wrap: nowrap;
+  }
+  .portfolio-pictures {
+    width: 354px;
+    height: 294px;
+  }
+}
+
 @media (min-width: 1200px) {
-  .main-section2{
+  .main-section2 {
     margin-top: 94px;
     margin-bottom: 94px;
   }
@@ -150,7 +159,7 @@
     width: 370px;
     height: 295px;
   }
-  .main-section-list{
+  .main-section-list {
     flex-wrap: nowrap;
   }
 }
