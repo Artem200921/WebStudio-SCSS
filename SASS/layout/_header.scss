@@ -71,10 +71,9 @@
 }
 
 .menu-container {
-  padding-top: 48px;
-  padding-left: 40px;
+  padding-top: 24px;
+  padding-left: 20px;
   position: fixed;
-  display: none;
   top: 0;
   left: 0;
   width: 100%;
@@ -85,8 +84,6 @@
 }
 
 .menu-container.is-open {
-  flex-direction: column;
-  display: flex;
   transform: translateX(0);
 }
 
