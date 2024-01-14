@@ -14,6 +14,7 @@
 }
 
 .footer-wrap {
+  width: 100%;
   column-gap: 70px;
   row-gap: 60px;
   flex-direction: column;
@@ -97,7 +98,7 @@
 }
 
 .footer-form-div {
-  row-gap: 20px;
+  width: 100%;
 }
 
 .footer-form-h4 {
@@ -172,6 +173,12 @@
 }
 
 @media (min-width: 768px) {
+  .footer-form-div{
+    width: 450px;
+  }
+  .footer-item-global{
+    flex-basis: calc((100% - 15px * 3) / 3);
+  }
   .footer-wrap {
     gap: 0;
     justify-content: center;
@@ -184,6 +191,12 @@
 }
 
 @media (min-width: 1200px) {
+  .footer-form-div{
+    width: 358px;
+  }
+  .footer-item-global{
+    flex-basis: 0;
+  }
   .footer {
     height: 252px;
   }
@@ -192,7 +205,7 @@
     row-gap: 60px;
     flex-wrap: nowrap;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
   }
   .footer-div {
     margin-right: 0;

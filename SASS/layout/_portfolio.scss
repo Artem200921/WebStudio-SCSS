@@ -70,8 +70,8 @@
 }
 
 .second-list-item {
+  width: 100%;
   background-color: $color-fff;
-  flex-basis: calc((100% - 3 * 30px) / 3);
 
   &:hover {
     animation-name: forItem;
@@ -133,6 +133,10 @@
   letter-spacing: 0.48px;
 }
 
+.portfolio-pictures {
+  width: 100%;
+}
+
 @media (min-width: 480px) {
   .portfolio-pictures {
     width: 450px;
@@ -148,6 +152,9 @@
     width: 354px;
     height: 294px;
   }
+  .second-list-item {
+    width: 354px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -161,5 +168,8 @@
   }
   .main-section-list {
     flex-wrap: nowrap;
+  }
+  .second-list-item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
   }
 }

@@ -11,6 +11,8 @@
 }
 
 .our-team-ul {
+  align-items: center;
+  width: 100%;
   flex-direction: column;
   gap: 30px;
   display: flex;
@@ -76,6 +78,7 @@
 }
 
 .our-team-ul-li {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
