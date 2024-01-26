@@ -321,10 +321,13 @@
           <li class="pictures-ul-li">
             <div class="picture-wrap">
               <img
-                src="img/What-do-we-do1.jpg"
-                alt="Людина працює за ноутбуком"
-                class="picture"
-                width="370"
+                srcset="
+                  img/desktop/what-do-we-do1.jpg    1x,
+                  img/desktop/what-do-we-do1@2x.jpg 2x
+                "
+                src="img/desktop/what-do-we-do1.jpg"
+                alt="робота за комп'ютером"
+                width="370px"
               />
 
               <div class="picture-div">
@@ -335,10 +338,13 @@
           <li class="pictures-ul-li">
             <div class="picture-wrap">
               <img
-                src="img/What-do-we-do2.jpg"
-                alt="Людина дивиться в телефоні поряд з ним ноутбук"
-                class="picture"
-                width="370"
+                srcset="
+                  img/desktop/what-do-we-do2.jpg    1x,
+                  img/desktop/what-do-we-do2@2x.jpg 2x
+                "
+                src="img/desktop/what-do-we-do2.jpg"
+                alt="ДУЖЕ БАГАТО ТЕЛЕФОНІВ"
+                width="370px"
               />
 
               <div class="picture-div">
@@ -349,10 +355,13 @@
           <li class="pictures-ul-li">
             <div class="picture-wrap">
               <img
-                src="img/What-do-we-do3.jpg"
-                alt="Людина малює на планшеті"
-                class="picture"
-                width="370"
+                srcset="
+                  img/desktop/what-do-we-do3.jpg    1x,
+                  img/desktop/what-do-we-do3@2x.jpg 2x
+                "
+                src="img/desktop/what-do-we-do3.jpg"
+                alt="планшет"
+                width="370px"
               />
               <div class="picture-div">
                 <p class="picture-p">Дизайнерські рішення</p>
@@ -366,7 +375,32 @@
         <h2 class="main-our-team-h2">Наша команда</h2>
         <ul class="our-team-ul">
           <li class="our-team-ul-li">
-            <img src="img/human1.jpg" alt="Чоловік" class="our-team-img" />
+            <picture>
+              <source
+                srcset="img/desktop/human1.jpg 1x, img/desktop/human1@2x.jpg 2x"
+                type="image/jpg"
+                sizes="(min-width: 1200px) 270px"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="img/tablet/human1.jpg 1x, img/tablet/human1@2x.jpg 2x"
+                sizes="(min-width: 768px) 354px"
+                type="image/jpg"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="img/mobile/human1.jpg 1x, img/mobile/human1@2x.jpg 2x"
+                sizes="(min-width: 480px) 450px"
+                media="(min-width: 480px)"
+                type="image/jpg"
+              />
+              <img
+                srcset="img/mobile/human1.jpg 1x, img/mobile/human1@2x.jpg 2x"
+                alt="Опис зображення для усіх версій"
+                width="100%"
+              />
+            </picture>
+
             <h3 class="our-team-ul-li-h3">Ігор Дем'яненко</h3>
             <p class="our-team-ul-li-p">Product Designer</p>
             <ul class="social-team">
@@ -428,7 +462,31 @@
             </ul>
           </li>
           <li class="our-team-ul-li">
-            <img src="img/human2.jpg" alt="Жінка" class="our-team-img" />
+            <picture>
+              <source
+                srcset="img/desktop/human2.jpg 1x, img/desktop/human2@2x.jpg 2x"
+                type="image/jpg"
+                sizes="(min-width: 1200px) 270px"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="img/tablet/human2.jpg 1x, img/tablet/human2@2x.jpg 2x"
+                sizes="(min-width: 768px) 354px"
+                type="image/jpg"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="img/mobile/human2.jpg 1x, img/mobile/human2@2x.jpg 2x"
+                sizes="(min-width: 480px) 450px"
+                media="(min-width: 480px)"
+                type="image/jpg"
+              />
+              <img
+                srcset="img/mobile/human2.jpg 1x, img/mobile/human2@2x.jpg 2x"
+                alt="Опис зображення для усіх версій"
+                width="100%"
+              />
+            </picture>
             <h3 class="our-team-ul-li-h3">Ольга Рєпіна</h3>
             <p class="our-team-ul-li-p">Frontend Developer</p>
             <ul class="social-team">
@@ -490,7 +548,31 @@
             </ul>
           </li>
           <li class="our-team-ul-li">
-            <img src="img/human3.jpg" alt="Чоловік" class="our-team-img" />
+            <picture>
+              <source
+                srcset="img/desktop/human3.jpg 1x, img/desktop/human3@2x.jpg 2x"
+                type="image/jpg"
+                sizes="(min-width: 1200px) 270px"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="img/tablet/human3.jpg 1x, img/tablet/human3@2x.jpg 2x"
+                sizes="(min-width: 768px) 354px"
+                type="image/jpg"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="img/mobile/human3.jpg 1x, img/mobile/human3@2x.jpg 2x"
+                sizes="(min-width: 480px) 450px"
+                media="(min-width: 480px)"
+                type="image/jpg"
+              />
+              <img
+                srcset="img/mobile/human3.jpg 1x, img/mobile/human3@2x.jpg 2x"
+                alt="Опис зображення для усіх версій"
+                width="100%"
+              />
+            </picture>
             <h3 class="our-team-ul-li-h3">Микола Тарасов</h3>
             <p class="our-team-ul-li-p">Marketing</p>
             <ul class="social-team">
@@ -552,7 +634,31 @@
             </ul>
           </li>
           <li class="our-team-ul-li">
-            <img src="img/human4.jpg" alt="Чоловік" class="our-team-img" />
+            <picture>
+              <source
+                srcset="img/desktop/human4.jpg 1x, img/desktop/human4@2x.jpg 2x"
+                type="image/jpg"
+                sizes="(min-width: 1200px) 270px"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="img/tablet/human4.jpg 1x, img/tablet/human4@2x.jpg 2x"
+                sizes="(min-width: 768px) 354px"
+                type="image/jpg"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="img/mobile/human4.jpg 1x, img/mobile/human4@2x.jpg 2x"
+                sizes="(min-width: 480px) 450px"
+                media="(min-width: 480px)"
+                type="image/jpg"
+              />
+              <img
+                srcset="img/mobile/human4.jpg 1x, img/mobile/human4@2x.jpg 2x"
+                alt="Опис зображення для усіх версій"
+                width="100%"
+              />
+            </picture>
             <h3 class="our-team-ul-li-h3">Михайло Єрмаков</h3>
             <p class="our-team-ul-li-p">UI Designer</p>
             <ul class="social-team">
